@@ -1,0 +1,525 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="./home.php" />
+    <title>Single Post</title>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="icon" type="image/svg" href="./images/logo_m.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      @import './css/style.css';
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container xl">
+        <div class="logo-wrap">
+          <a href="#">
+            <amp-img alt="Coinvestasi" class="img-d" src="./images/logo.svg" width="215" height="42"></amp-img>
+            <amp-img alt="Coinvestasi" class="img-m" src="./images/logo_m.svg" width="31" height="31" ></amp-img>
+          </a>
+        </div>
+        <div [class]="headerStatus ? 'menu-wrap is-active' : 'menu-wrap'" class="menu-wrap">
+          <ul class="menu">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Aplikasi</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+          </ul>
+          <div class="btns-wrap">
+            <a href="#" class="btn btn-yellow">Button</a>
+            <a href="#" class="btn btn-blue">Button</a>
+          </div>
+        </div>
+        <div [class]="headerStatus ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" class="hamburger hamburger--collapse" on="tap:AMP.setState({headerStatus: !headerStatus})" tabIndex="0" role="toggle-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="post-entry">
+        <div class="container md">
+          <div class="sticky-wrap">
+            <div class="sticky-box">
+              <div class="img-wrap"></div>
+              <ul class="social-wrap">
+                <li><a href="#"><amp-img src="./images/ico-duplicate-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-linkedin-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-facebook-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-twitter-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry-content">
+            <div class="ctn-box">
+              <div class="img-wrap"></div>
+              <div class="ctn-wrap">
+                <div class="breadcrumb">
+                  <p class="sm"><span><a href="">Home</a></span><span><a href="">Theme</a></span><span>Post Name</span></p>
+                </div>
+                <h2>Telegram Educational Tests Contest</h2>
+                <p>With 2 billion students currently away from schools, the world is in dire need of online educational tools. Telegram would like to contribute to solving this problem by creating a database of educational tests for all subjects and levels. To do that, Telegram is announcing a crowd-sourcing initiative in which Telegram will distribute EUR 400,000 among creators of educational tests.</p>
+              </div>
+            </div>
+            <div class="info-cards">
+              <div class="sng-card">
+                <p class="sm">Reward pool</p>
+                <p class="info">$440 000</p>
+                <p class="sm">400 000 in IDR</p>
+              </div>
+              <div class="sng-card">
+                <p class="sm">Expected profit</p>
+                <p class="info">$10+</p>
+                <p class="sm">9+ in IDR</p>
+              </div>
+              <div class="sng-card">
+                <p class="sm">Max participants</p>
+                <p class="info">∞</p>
+                <p class="sm">People</p>
+              </div>
+              <div class="sng-card">
+                <p class="sm">COINVESTASI score</p>
+                <p class="info">Medium</p>
+                <p class="sm">Easy, Low Risks</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-wrap">
+                <ul class="details">
+                  <li>
+                    <p class="field sm">Activity Type:</p>
+                    <p class="sm">Creative / Contest</p>
+                  </li>
+                  <li>
+                    <p class="field sm">Date:</p>
+                    <p class="sm">24 Apr 2020 00:00 - 15 May 2020 23:59</p>
+                  </li>
+                  <li>
+                    <p class="field sm">Registration:</p>
+                    <p class="sm">Open</p>
+                  </li>
+                  <li>
+                    <p class="field sm">When reward:</p>
+                    <p class="sm">TBA</p>
+                  </li>
+                </ul>
+              </div>
+              <a href="" class="btn btn-blue btn-fw">
+                Go to event page<amp-img src="./images/ico-blank.svg" alt="" width="16" height="16"></amp-img>
+              </a>
+            </div>
+            <div class="info-box">
+              <div class="info-wrap">
+                <h3>Cara gabung</h3>
+                <ul class="c-ordered">
+                  <li>Join to Telegram App or download if you dont have one.</li>
+                  <li>Join to Telegram App or download if you dont have one.</li>
+                  <li>Join to Telegram App or download if you dont have one.</li>
+                </ul>
+                <p>Telegram will publish the quizzes you submit in a searchable directory. Based on their quality and popularity, the team will announce the winners in several stages. Submissions for the first stage end on May 15.</p>
+              </div>
+              <a href="" class="btn btn-blue btn-fw">
+                Go to event page<amp-img src="./images/ico-blank.svg" alt="" width="16" height="16"></amp-img>
+              </a>
+            </div>
+            <div class="btcs">
+              <h3>Airdrop lain</h3>
+              <div class="btc-wrap">
+                <div class="sng-btc">
+                  <div class="ico-wrap">
+                  </div>
+                  <div class="ctn-wrap">
+                    <div class="txt-wrap">
+                      <p>Telegram Educational Tests Contest</p>
+                      <p class="type">Type of activty</p>
+                    </div>
+                    <div class="info-wrap">
+                      <p class="usd">$10+</p>
+                      <p class="idr sm">440 000 IDR</p>
+                    </div>
+                    <div class="lnk-wrap">
+                      <a href="#" class="btn btn-blue">Lanjut</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-btc">
+                  <div class="ico-wrap">
+                  </div>
+                  <div class="ctn-wrap">
+                    <div class="txt-wrap">
+                      <p>Telegram Educational Tests Contest</p>
+                      <p class="type">Type of activty</p>
+                    </div>
+                    <div class="info-wrap">
+                      <p class="usd">$10+</p>
+                      <p class="idr sm">440 000 IDR</p>
+                    </div>
+                    <div class="lnk-wrap">
+                      <a href="#" class="btn btn-blue">Lanjut</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-btc">
+                  <div class="ico-wrap">
+                  </div>
+                  <div class="ctn-wrap">
+                    <div class="txt-wrap">
+                      <p>Telegram Educational Tests Contest</p>
+                      <p class="type">Type of activty</p>
+                    </div>
+                    <div class="info-wrap">
+                      <p class="usd">$10+</p>
+                      <p class="idr sm">440 000 IDR</p>
+                    </div>
+                    <div class="lnk-wrap">
+                      <a href="#" class="btn btn-blue">Lanjut</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="post-slider hide-img-mobile">
+        <div class="container md">
+          <h2>Panduan Bitcoin Gratis</h2>
+          <div class="slider-wrap">
+            <amp-selector 
+              id="panduanSelector" 
+              on="select:panduanCarousel.goToSlide(index=event.targetOption)" 
+              layout="container"> 
+              <div option="0" selected></div>
+              <div option="1"></div>
+              <div option="2"></div>
+              <div option="3"></div>
+            </amp-selector>
+            <amp-carousel type="slides"
+              layout="fill"
+              id="panduanCarousel"
+              on="slideChange:panduanSelector.toggle(index=event.index, value=true)">
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Cara Trading di Bityard untuk Pemula</h3></a>
+                </div>
+              </div>
+            </amp-carousel>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="load-more-link">Lihat semua panduan Bitcoin gratis</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container xl">
+        <div class="main-wrap">
+          <div class="logo-wrap">
+            <a href="#">
+              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <p>Coinvestasi adalah platform Indonesia terkemuka untuk acara dan informasi terkait mata uang kripto, aset digital, dan teknologi blockchain.</p>
+          </div>
+          <ul class="social-wrap">
+            <li><a href="#"><amp-img src="./images/ico-facebook.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-instagram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-twitter.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-youtube.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+          </ul>
+          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+        </div>
+        <div class="menu-wrap">
+          <div class="sng-wrap">
+            <h2>Jelajahi</h2>
+            <ul class="menu">
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Mulai</h2>
+            <ul class="menu">
+              <li><a href="#">Beli Bitcoin</a></li>
+              <li><a href="#">Trading Bitcoin</a></li>
+              <li><a href="#">Bitcoin gratis</a></li>
+              <li><a href="#">Mining bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Berita</h2>
+            <ul class="menu">
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Kosa kata</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Pertanyaan</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Aplikasi</h2>
+            <ul class="menu">
+              <li><a href="#">Exchange Bitcoin</a></li>
+              <li><a href="#">Dompet Bitcoin</a></li>
+              <li><a href="#">Mining Bitcoin</a></li>
+              <li><a href="#">Faucet Bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Acara</h2>
+            <ul class="menu">
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Tentang</h2>
+            <ul class="menu">
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Dalam berita</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Advertise</h2>
+            <ul class="menu">
+              <li><a href="#">Our partners</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">How Coinvestasi works</a></li>
+              <li><a href="#">F.A.Q</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <amp-state id="props">
+      <script type="application/json">
+        {
+          "headerStatus": true
+        }
+      </script>
+  </amp-state>
+  </body>
+</html>

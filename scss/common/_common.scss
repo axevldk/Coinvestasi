@@ -1,0 +1,159 @@
+@import "./variables";
+@import "./hamburgers";
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: Poppins;
+  line-height: 1.5;
+  color: $col-txt;
+  font-size: 18px;
+  @include respond-to-max(tablet) {
+    font-size: 16px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 770px;
+  padding: 0 15px;
+  &.xl {
+    max-width: 1440px;
+  }
+  &.lg {
+    max-width: 1170px;
+  }
+  &.md {
+    max-width: 1040px;
+  }
+  &.sm {
+    max-width: 920px;
+  }
+  &.xs {
+    max-width: 690px;
+  }
+}
+p {
+  margin: 0;
+}
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a, input, button, select {
+  transition: all 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+  color: $col-txt;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: $col-blue;
+}
+h1 {
+  font-size: 40px;
+  @include respond-to-max(tablet) {
+    font-size: 20px;
+  }
+}
+h2 {
+  font-size: 32px;
+  @include respond-to-max(tablet) {
+    font-size: 18px;
+  }
+}
+h3 {
+  font-size: 24px;
+  @include respond-to-max(tablet) {
+    font-size: 16px;
+  }
+}
+h4 {
+  font-size: 20px;
+  @include respond-to-max(tablet) {
+    font-size: 16px;
+  }
+}
+p {
+  font-size: 18px;
+  @include respond-to-max(tablet) {
+    font-size: 16px;
+  }
+  &.sm {
+    font-size: 14px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
+  font-size: 18px;
+  font-weight: 500;
+  @include respond-to-max(tablet) {
+    font-size: 16px;
+  }
+  &-blue {
+    background: $col-blue;
+    border: 1px solid $col-blue;
+    color: white;
+    &.bordered {
+      background: $col-light-bg;
+      color: $col-blue;
+    }    
+  }
+  &-yellow {
+    background: $col-yellow;
+    border: 1px solid $col-yellow;
+    color: white;
+    &.bordered {
+      background: $col-light-bg;
+      color: $col-yellow;
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &-empty {
+    box-shadow: none;
+    &:hover {
+      opacity: 1;
+      color: white;
+      background: $col-blue;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.12);
+    }
+  }
+  &-fw {
+    width: 100%;
+    text-align: center;
+  }
+}
+.img-d {
+  @include respond-to-max(tablet) {
+    display: none;
+  }
+}
+.img-m {
+  @include respond-to-min(tablet) {
+    display: none;
+  }
+}
+.hamburger {
+  outline: none;
+}
+.txt {
+  &-left {
+    text-align: left !important;
+  }
+  &-center {
+    text-align: center !important;
+  }
+  &-right {
+    text-align: right !important;
+  }
+}

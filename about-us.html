@@ -1,0 +1,249 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="./home.php" />
+    <title>About Us</title>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="icon" type="image/svg" href="./images/logo_m.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      @import './css/style.css';
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container xl">
+        <div class="logo-wrap">
+          <a href="#">
+            <amp-img alt="Coinvestasi" class="img-d" src="./images/logo.svg" width="215" height="42"></amp-img>
+            <amp-img alt="Coinvestasi" class="img-m" src="./images/logo_m.svg" width="31" height="31" ></amp-img>
+          </a>
+        </div>
+        <div [class]="headerStatus ? 'menu-wrap is-active' : 'menu-wrap'" class="menu-wrap">
+          <ul class="menu">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Aplikasi</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+          </ul>
+          <div class="btns-wrap">
+            <a href="#" class="btn btn-yellow">Button</a>
+            <a href="#" class="btn btn-blue">Button</a>
+          </div>
+        </div>
+        <div [class]="headerStatus ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" class="hamburger hamburger--collapse" on="tap:AMP.setState({headerStatus: !headerStatus})" tabIndex="0" role="toggle-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="wide-intro">
+        <div class="container">
+          <div class="content-holder">
+            <h1>Tentang Coinvestasi</h1>
+            <p>Dibentuk pada 2017, Coinvestasi.com adalah media online yang berfokus menyajikan berita dan informasi seputar teknologi Blockchain, Bitcoin, dan Aset Kripto. Setiap hari tim kami menyampaikan berita terkini dengan gaya yang informatif dan edukatif.</p>
+            <p>Dengan semakin berkembangnya dunia teknologi finansial, semakin banyak pula “lahan-lahan” baru untuk berinvestasi, Bitcoin dan Aset Kripto adalah beberapa diantaranya. Masih terbatasnya informasi dan masih banyaknya pemberitaan yang keliru mengenai Blockchain dan Aset Kripto membuat mayoritas masyarakat Indonesia masih belum terinformasi dengan benar.</p>
+            <p>Kami hadir dengan konten-konten yang didasarkan pada hasrat kami untuk menyampaikan informasi seputar teknologi Blockchain dan Aset Kripto dalam bahasa Indonesia sehingga mudah dimengerti. Kami percaya bahwa dunia yang terdesentralisasi akan tumbuh secara eksponensial, menjadi bagian integral dari kehidupan kita sehari-hari. Kami bekerja setiap hari untuk membantu mengedukasi masyarakat Indonesia, khususnya pemerhati Blockchain dan Aset Kripto serta meningkatkan kesadaran akan pentingnya teknologi yang ditawarkan dalam revolusi digital saat ini.</p>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container md">
+          <h2>Tim Kami</h2>
+          <div class="members">
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-felita.png" width="260" height="260" layout="responsive" alt="Felita Setiawan"></amp-img>
+              </div>
+              <h3>Felita Setiawan</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-rizqia.png" width="260" height="260" layout="responsive" alt="Rizqia Nur Fadilla"></amp-img>
+              </div>
+              <h3>Rizqia Nur Fadilla</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-wafa.png" width="260" height="260" layout="responsive" alt="Wafa Hasnaghina"></amp-img>
+              </div>
+              <h3>Wafa Hasnaghina</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-kelvin.png" width="260" height="260" layout="responsive" alt="Kelvin Lokananta Nasution"></amp-img>
+              </div>
+              <h3>Kelvin Lokananta Nasution</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-anisa.png" width="260" height="260" layout="responsive" alt="Anisa Giovanny"></amp-img>
+              </div>
+              <h3>Anisa Giovanny</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-aggryta.png" width="260" height="260" layout="responsive" alt="Aggryta Al Fath E"></amp-img>
+              </div>
+              <h3>Aggryta Al Fath E</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-tiara.png" width="260" height="260" layout="responsive" alt="Tiara Melissa Adhalia"></amp-img>
+              </div>
+              <h3>Tiara Melissa Adhalia</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-dimas.png" width="260" height="260" layout="responsive" alt="Dimas Putranto"></amp-img>
+              </div>
+              <h3>Dimas Putranto</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-niki.png" width="260" height="260" layout="responsive" alt="Niki Sekar Dewayani"></amp-img>
+              </div>
+              <h3>Niki Sekar Dewayani</h3>
+            </div>
+            <div class="sng-member">
+              <div class="img-wrap">
+                <amp-img src="./images/ico-lidya.png" width="260" height="260" layout="responsive" alt="Lidya Handy"></amp-img>
+              </div>
+              <h3>Lidya Handy</h3>
+            </div>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="btn btn-yellow">Join our team</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container xl">
+        <div class="main-wrap">
+          <div class="logo-wrap">
+            <a href="#">
+              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <p>Coinvestasi adalah platform Indonesia terkemuka untuk acara dan informasi terkait mata uang kripto, aset digital, dan teknologi blockchain.</p>
+          </div>
+          <ul class="social-wrap">
+            <li><a href="#"><amp-img src="./images/ico-facebook.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-instagram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-twitter.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-youtube.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+          </ul>
+          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+        </div>
+        <div class="menu-wrap">
+          <div class="sng-wrap">
+            <h2>Jelajahi</h2>
+            <ul class="menu">
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Mulai</h2>
+            <ul class="menu">
+              <li><a href="#">Beli Bitcoin</a></li>
+              <li><a href="#">Trading Bitcoin</a></li>
+              <li><a href="#">Bitcoin gratis</a></li>
+              <li><a href="#">Mining bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Berita</h2>
+            <ul class="menu">
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Kosa kata</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Pertanyaan</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Aplikasi</h2>
+            <ul class="menu">
+              <li><a href="#">Exchange Bitcoin</a></li>
+              <li><a href="#">Dompet Bitcoin</a></li>
+              <li><a href="#">Mining Bitcoin</a></li>
+              <li><a href="#">Faucet Bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Acara</h2>
+            <ul class="menu">
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Tentang</h2>
+            <ul class="menu">
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Dalam berita</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Advertise</h2>
+            <ul class="menu">
+              <li><a href="#">Our partners</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">How Coinvestasi works</a></li>
+              <li><a href="#">F.A.Q</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <amp-state id="props">
+      <script type="application/json">
+        {
+          "headerStatus": true
+        }
+      </script>
+  </amp-state>
+  </body>
+</html>

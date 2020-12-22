@@ -1,0 +1,734 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="./home.php" />
+    <title>Single Guide</title>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="icon" type="image/svg" href="./images/logo_m.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      @import './css/style.css';
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container xl">
+        <div class="logo-wrap">
+          <a href="#">
+            <amp-img alt="Coinvestasi" class="img-d" src="./images/logo.svg" width="215" height="42"></amp-img>
+            <amp-img alt="Coinvestasi" class="img-m" src="./images/logo_m.svg" width="31" height="31" ></amp-img>
+          </a>
+        </div>
+        <div [class]="headerStatus ? 'menu-wrap is-active' : 'menu-wrap'" class="menu-wrap">
+          <ul class="menu">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Aplikasi</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+          </ul>
+          <div class="btns-wrap">
+            <a href="#" class="btn btn-yellow">Button</a>
+            <a href="#" class="btn btn-blue">Button</a>
+          </div>
+        </div>
+        <div [class]="headerStatus ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" class="hamburger hamburger--collapse" on="tap:AMP.setState({headerStatus: !headerStatus})" tabIndex="0" role="toggle-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container lg">
+          <div class="img-wrap"></div>
+          <div class="ctn-wrap">
+            <h2>CTA in bold here CTA in bold hereCTA in bold here</h2>
+            <p>CTA value description CTA value description CTA value description CTA value description</p>
+            <div class="btn-wrap">
+              <p class="sm">CTA question CTA question CTA question ?</p>
+              <a href="#" class="btn btn-yellow">CTA Button to go to form</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h1 class="title">Title Panduan Title Panduan Title Panduan Title Panduan</h1>
+      <div class="featured-img">
+        <div class="container">
+          <amp-img media="(min-width: 768px)" src="./images/thumbnail_726x408.png" width="726" height="408" layout="responsive" alt="Featured"></amp-img>
+        </div>
+      </div>
+      <div class="cta">
+        <div class="container lg">
+          <div class="cta-wrap">
+            <div class="ctn-wrap">
+              <div class="img-wrap">
+                <amp-img alt="CTA" src="./images/ico-btc.svg" width="100" height="100" ></amp-img>
+              </div>
+              <div class="txt-wrap">
+                <p>Mulai dari Rp10,000</p>
+                <h2>BELI BITCOIN PERTAMA MU SEKARANG</h2>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-yellow">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="summary">
+        <div class="container xs">
+          <div class="ctn-wrap">
+            <h3>Kesimpulan panduan</h3>
+            <ul>
+              <li>KYC/AML</li>
+              <li>Reputasi</li>
+              <li>Keamanan</li>
+              <li>Dana asuransi</li>
+              <li>Pertukaran mata uang Fiat</li>
+              <li>Trading Leverage</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="entry">
+        <div class="container">
+          <div class="entry-wrap">
+            <p>Memilih exchange kripto adalah langkah awal untuk masuk ke dalam dunia transaksi kripto. Memilih platform pun tidak boleh dilakukan sembarangan untuk menghindarkan diri dari kerugian seperti peretasan dan pencurian.</p>
+            <p>Dibawah ini ada 10 hal penting yang harus kamu perhatikan untuk memilih bursa atau exchange kripto.</p>
+            <h2 class="txt-left">1. KYC/AML</h2>
+            <p>Know Your Customer (KYC) dan Anti-Money Laundering (AML) adalah hal pertama yang harus kamu perhatikan dalam memilih exchange.</p>
+            <p>Kedua hal tersebut mengharuskan calon pengguna untuk mengirimkan informasi pribadi selama proses pembuatan akun. Praktik dan persyaratan ini bervariasi antar bursa pertukaran satu dan lainnya.</p>
+            <p>Beberapa platform bahkan mewajibkan KYC dan AML untuk menarik dana dan mengangkat batasan tertentu, kemudian pengguna diharuskan untuk memberikan salinan foto atau kadang-kadang ada yang meminta bukti tempat tinggal. Banyak exchange kripto yang saat ini juga melarang pelanggan yang tinggal di negara tertentu.</p>
+            <h2 class="txt-left">2. Reputasi</h2>
+            <p>Industri Cryptocurrency masih termasuk baru, maka melihat reputasi suatu bursa sangat penting dilakukan. Karena banyak exchange yang terlibat kejahatan, peretasan dan penipuan.</p>
+            <p>Karena itu, penting untuk melakukan penelitian antara exchange yang ada. Kamu bisa mencarinya lewat Google atau media sosial untuk melihat apakah ada keluhan dari pengguna, kemudian evaluasi hasil penelitianmu. Mana bursa yang kira-kira memiliki reputasi bagus dan terpercaya.  </p>
+            <amp-img media="(min-width: 450px)" alt="Thumbnail" src="./images/thumbnail_411x411.png" width="411" height="411"></amp-img>
+            <amp-img media="(max-width: 449px)" alt="Thumbnail" src="./images/thumbnail_411x411.png" layout="responsive" width="365" height="640"></amp-img>
+            <h2 class="txt-left">3. Keamanan</h2>
+            <p>Setiap exchange tentu memiliki metode kemanannya sendiri. Periksalah untuk melihat apakah exchange menawarkan otentikasi dua faktor (2FA). Jika tidak, maka pertukaran mungkin belum memiliki keamanan yang sesuai standar.</p>
+            <p>Kemudian, lihatlah tipe 2FA yang kompatibel. Ada Google authenticator, Authy and Yubikey yang biasanya menawarkan kemampuan keamanan lebih baik dibandingkan 2FA berbasis teks seluler. Setiap bursa pertukaran juga memiliki berbagai langkah keamanan lainnya yang mungkin layak untuk dipertimbangkan.</p>
+            <a href="#" class="external-link">
+              <p class="read">Baca juga</p>
+              <p class="title">Name of related guide here on 1 line</p>
+            </a>
+            <h2 class="txt-left">4. Dana asuransi</h2>
+            <p>Lihatlah apakah bursa memiliki dana asuransi sebagai kompensasi pelanggan jika ada keadaan tertentu. Apalagi dunia cryptocurrency termasuk berisiko terhadap peretasan.</p>
+            <p>Maka dari itu jika perusahaan exchange memiliki dana asuransi tentu akan membuat pengguna sedikit lega karena jika aset mereka hilang karena dicuri atau diretas, pengguna bisa mendapatkan ganti rugi atau kompensasi dari dana asuransi yang dimiliki oleh bursa.</p>
+            <h2 class="txt-left">5. Pertukaran Mata Uang Fiat</h2>
+            <p>Kita membutuhkan bursa yang kompatibel dengan mata uang fiat. Hal ini untuk memudahkan dalam melakukan transaksi, misalnya untuk membeli Bitcoin dengan mata uang fiat atau mencairkan aset kripto menjadi mata uang fiat dan lain sebagainya.</p>
+            <p>Beberapa bursa memiliki opsi fiat yang berbeda dan memiliki kerjasama dengan bank tertentu. Periksalah apakah mata uang fiat dan bank yang disediakan sesuai dengan kebutuhanmu.</p>
+            <h2 class="txt-left">6. Trading Leverage</h2>
+            <p>Pertukaran derivatif sering menawarkan trading  leverage. Perdagangan tersebut pada dasarnya memungkinkan para trader untuk meminjam sejumlah dana tertentu agar bisa melakukan trading berdasarkan jumlah dana yang mereka miliki di bursa.</p>
+            <p>Leverage mungkin penting bagi trader yang ingin memasuki posisi jangka pendek dengan lebih besar. Beberapa bursa memiliki aturan yang bervariasi soal leverage ini.</p>
+            <a href="#" class="external-link">
+              <p class="read">Baca juga</p>
+              <p class="title">Name of related guide here on 1 line</p>
+            </a>
+            <h2 class="txt-left">7. Volume</h2>
+            <p>Kamu bisa melihat jumlah peserta dalam bursa di waktu tertentu dan jumlah masing-masing aset yang diperdagangkan. Aspek ini penting karena memengaruhi seberapa mudah pengguna dapat masuk atau keluar.</p>
+            <p>Misalnya, jika ada trader yang menjual 100 BTC, ia kemungkinan tidak dapat melakukannya pada pertukaran dengan jumlah pengguna sedikit, ini bisa memaksa trader untuk menjual asetnya dengan harga lebih rendah di bursa.</p>
+            <p>Melihat jumlah pengguna bursa kripto memang tidak mudah, karena kadang data yang diinformasikan palsu. Salah satu caranya adalah bisa memeriksa melalui situs website pihak ketiga yang memberikan informasi perihal data ini. Misalnya, Coin360, CoinMartketCap atau OnChainFX.</p>
+            <h2 class="txt-left">8. Harga</h2>
+            <p>Harga aset kripto bisa bervariasi di berbagai bursa. Bisa saja aset kripto diperdagangkan lebih murah atau lebih mahal dalam suatu bursa.</p>
+            <p>Memerhatikan perbedaan ini dapat menjadi faktor dalam memilih exchange kripto terutama jika kamu lebih fokus kepada altcoin. Perbedaan harga yang terlalu jauh juga bisa menjadi tanda bahaya bahwa exchange mungkin menderita karena likuiditas atau volume yang rendah.</p>
+            <h2 class="txt-left">9. Aset Kripto yang Disediakan</h2>
+            <p>Setiap bursa biasanya menyediakan aset digital terkenal seperti Bitcoin, Ethereum (ETH) dan Litecoin (LTC). Namun ada juga yang menyediakan koin atau token kecil lainnya. Karena itu, penting untuk mengetahui aset kripto apa yang ditawarkan oleh bursa agar kamu bisa memilih yang paling sesuai.</p>
+            <h2 class="txt-left">10. Biaya</h2>
+            <p>Sebagian besar bursa pertukaran membebankan sedikit biaya untuk melakukan trading. Biayanya bervariasi tergantung platform, dan biasanya didasarkan pada presentase dari setiap trading.</p>
+            <p>Beberapa pertukaran juga memiliki biaya penarikan. Karena itu penting untuk mengetahui berapa biaya yang dibebankan dalam setiap transaksi agar budgetmu tetap sesuai.</p>
+            <p>10 aspek diatas bisa dijadikan pertimbangan dalam memilih exchange kripto, namun selain itu jangan malas untuk melakukan riset agar kamu memahami industri ini. Karena pemilihan bursa sangat subjektif tergantung dari kebutuhan, tujuan dan kepentingan.</p>
+          </div>
+        </div>
+      </section>
+      <div class="cta">
+        <div class="container lg">
+          <div class="cta-wrap">
+            <div class="ctn-wrap">
+              <div class="img-wrap">
+                <amp-img alt="CTA" src="./images/ico-btc.svg" width="100" height="100" ></amp-img>
+              </div>
+              <div class="txt-wrap">
+                <p>Mulai dari Rp10,000</p>
+                <h2>BELI BITCOIN PERTAMA MU SEKARANG</h2>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-yellow">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="faq">
+        <div class="container">
+          <div class="faq-wrap">
+            <div class="faq-header">
+              <div class="ico-wrap">
+                <amp-img alt="CTA" src="./images/ico-faq.svg" layout="responsive" width="40" height="40" ></amp-img>
+              </div>
+              <h2>Pertanyaan penting</h2>
+            </div>
+            <amp-accordion class="faq-body" expand-single-section>
+              <section class="faq-item" expanded>
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+            </amp-accordion>
+          </div>
+        </div>
+      </section>
+      <section class="author-box">
+        <div class="container">
+          <div class="author-wrap">
+            <div class="ctn-wrap">
+              <div class="img-wrap">
+                <amp-img alt="Avatar" src="./images/avatar-women.png" layout="responsive" width="124" height="124" ></amp-img>
+              </div>
+              <div class="txt-wrap">
+                <p class="name">Author full name</p>
+                <p class="description">A decentralized, digitized ledger that records transaction information... records transaction information...</p>
+                <ul class="social-wrap">
+                  <li><a href="#"><amp-img alt="Twitter" src="./images/ico-twitter-b.svg" width="18" height="18" ></amp-img></a></li>
+                  <li><a href="#"><amp-img alt="Linkedin" src="./images/ico-linkedin-b.svg" width="18" height="18" ></amp-img></a></li>
+                  <li><a href="#"><amp-img alt="Mail" src="./images/ico-mail-b.svg" width="21" height="18" ></amp-img></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="desc-wrap">
+              <p class="description">A decentralized, digitized ledger that records transaction information... records transaction information...</p>
+            </div>
+          </div>
+        </div>        
+      </section>
+      <section class="post-slider hide-img-mobile">
+        <div class="container md">
+          <h2>Panduan</h2>
+          <div class="slider-wrap">
+            <amp-selector 
+              id="panduanSelector" 
+              on="select:panduanCarousel.goToSlide(index=event.targetOption)" 
+              layout="container"> 
+              <div option="0" selected></div>
+              <div option="1"></div>
+              <div option="2"></div>
+              <div option="3"></div>
+            </amp-selector>
+            <amp-carousel type="slides"
+              layout="fill"
+              id="panduanCarousel"
+              on="slideChange:panduanSelector.toggle(index=event.index, value=true)">
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+            </amp-carousel>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="load-more-link">Lihat semua panduan DeFi</a>
+          </div>
+        </div>
+      </section>
+      <section class="logos">
+        <div class="container lg">
+          <div class="logos-wrap">
+            <h3>Aplikasi Mining</h3>
+            <div class="logos-lst">
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></a>
+              <a href=""><amp-img src="./images/logo_placeholder.png" width="77" height="77" alt="Logo"></amp-img></li>
+            </div>
+            <div class="btn-wrap">
+              <a href="#" class="load-more-link">Lihat semua panduan DeFi</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="post-slider no-img">
+        <div class="container lg">
+          <h2>Kosa-kata</h2>
+          <div class="slider-wrap">
+            <amp-selector 
+              id="glossarySelector" 
+              on="select:glossaryCarousel.goToSlide(index=event.targetOption)" 
+              layout="container"> 
+              <div option="0" selected></div>
+              <div option="1"></div>
+              <div option="2"></div>
+              <div option="3"></div>
+            </amp-selector>
+            <amp-carousel type="slides"
+              layout="fill"
+              id="glossaryCarousel"
+              on="slideChange:glossarySelector.toggle(index=event.index, value=true)">
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+                <div class="sng-post">
+                  <div class="info">
+                    <p class="category">Theme</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                  <p class="excerpt">A decentralized, digitized ledger that records transaction information...</p>
+                  <a href="#" class="read-more-lnk">Baca lebih</a>
+                </div>
+              </div>
+            </amp-carousel>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="load-more-link">Lihat semua panduan DeFi</a>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container xs">
+          <h2>*DeFi* Pertanyaan</h2>
+          <div class="question-wrap">
+            <a href="#" class="sng-question">
+              <h3>Most recent question 1</h3>
+              <p>Begining of the first paragraph from the answer on one line...</p>
+            </a>
+            <a href="#" class="sng-question">
+              <h3>Most recent question 1</h3>
+              <p>Begining of the first paragraph from the answer on one line...</p>
+            </a>
+            <a href="#" class="sng-question">
+              <h3>Most recent question 1</h3>
+              <p>Begining of the first paragraph from the answer on one line...</p>
+            </a>
+            <a href="#" class="sng-question">
+              <h3>Most recent question 1</h3>
+              <p>Begining of the first paragraph from the answer on one line...</p>
+            </a>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="load-more-link">Lihat semua pertanyaan</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container xl">
+        <div class="main-wrap">
+          <div class="logo-wrap">
+            <a href="#">
+              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <p>Coinvestasi adalah platform Indonesia terkemuka untuk acara dan informasi terkait mata uang kripto, aset digital, dan teknologi blockchain.</p>
+          </div>
+          <ul class="social-wrap">
+            <li><a href="#"><amp-img src="./images/ico-facebook.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-instagram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-twitter.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-youtube.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+          </ul>
+          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+        </div>
+        <div class="menu-wrap">
+          <div class="sng-wrap">
+            <h2>Jelajahi</h2>
+            <ul class="menu">
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Mulai</h2>
+            <ul class="menu">
+              <li><a href="#">Beli Bitcoin</a></li>
+              <li><a href="#">Trading Bitcoin</a></li>
+              <li><a href="#">Bitcoin gratis</a></li>
+              <li><a href="#">Mining bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Berita</h2>
+            <ul class="menu">
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Kosa kata</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Pertanyaan</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Aplikasi</h2>
+            <ul class="menu">
+              <li><a href="#">Exchange Bitcoin</a></li>
+              <li><a href="#">Dompet Bitcoin</a></li>
+              <li><a href="#">Mining Bitcoin</a></li>
+              <li><a href="#">Faucet Bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Acara</h2>
+            <ul class="menu">
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Tentang</h2>
+            <ul class="menu">
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Dalam berita</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Advertise</h2>
+            <ul class="menu">
+              <li><a href="#">Our partners</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">How Coinvestasi works</a></li>
+              <li><a href="#">F.A.Q</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <amp-state id="props">
+      <script type="application/json">
+        {
+          "headerStatus": true
+        }
+      </script>
+  </amp-state>
+  </body>
+</html>

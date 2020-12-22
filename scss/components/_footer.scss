@@ -1,0 +1,121 @@
+footer {
+  padding: 80px 0 160px;
+  background: $col-blue;
+  @include respond-to-max(laptop) {
+    padding: 40px 0 50px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 48px;
+    @include respond-to-max(laptop) {
+      padding: 0 15px
+    }
+    .main-wrap {
+      width: 360px;
+      @include respond-to-max(laptop) {
+        margin: 0 auto;
+        text-align: center;
+      }
+      p {
+        font-size: 14px;
+        line-height: 30px;
+        color: white;
+      }
+      .logo-wrap {
+        line-height: 0;
+        margin-bottom: 25px;
+      }
+      .txt-wrap {
+        margin-bottom: 24px;
+      }
+      .social-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        @include respond-to-max(laptop) {
+          justify-content: center;
+        }
+        li {
+          line-height: 0;
+          &:not(:last-child) {
+            margin-right: 8px;
+          }
+          a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            &:hover {
+              opacity: 0.8;
+            }
+            img {
+              width: 30px;
+            }
+          }
+        }
+      }
+    }
+    .menu-wrap {
+      width: calc(100% - 450px);
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      column-gap: 50px;
+      row-gap: 50px;
+      @include respond-to-max(desktop) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include respond-to-max(laptop) {
+        width: 100%;
+        margin-top: 55px;
+        column-gap: 10px;
+        row-gap: 20px;
+        grid-template-columns: repeat(5, 1fr);
+      }
+      @include respond-to-max(tablet) {
+        text-align: left;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .sng-wrap {
+        h2 {
+          font-weight: 600;
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: white;
+          @include respond-to-max(tablet) {
+            font-size: 16px;
+            margin-bottom: 3px;
+          }
+        }
+        .menu {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 3px;
+            }
+            a {
+              font-size: 14px;
+              line-height: 30px;
+              color: white;
+              position: relative;
+              &::before {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                width: 0;
+                height: 0;
+                border-top: 1px solid white;
+                transition: all 0.3s ease-in-out;
+              }
+              &:hover {
+                &::before {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

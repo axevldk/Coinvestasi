@@ -1,0 +1,113 @@
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 10;
+  box-shadow: 0px 1.88px 3.75px rgba(0, 0, 0, 0.075);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 90px;
+    @include respond-to-max(laptop) {
+      padding: 0 15px
+    }
+    @include respond-to-max(tablet) {
+      height: 60px;
+      justify-content: center;
+    }
+  }
+  .logo-wrap {
+    line-height: 0;
+  }
+  .menu-wrap {
+    display: flex;
+    align-items: center;
+    @include respond-to-max(tablet) {
+      position: fixed;
+      top: 60px;
+      bottom: 0;
+      display: block;
+      left: -320px;
+      width: 320px;
+      background: white;
+      padding: 0 30px 0 13px;
+      box-shadow: 0px 1.88px 3.75px rgba(0, 0, 0, 0.075);
+      transition: all 0.5s ease-in-out;
+      &.is-active {
+        left: 0;
+      }
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      @include respond-to-max(tablet) {
+        display: block;
+      }
+      li {
+        &:not(:last-child) {
+          margin-right: 30px;
+          @include respond-to-max(laptop) {
+            margin-right: 12px;
+          }
+          @include respond-to-max(tablet) {
+            margin-right: 0;
+          }
+        }
+        @include respond-to-max(tablet) {
+          position: relative;
+          padding: 17px 0;
+          border-bottom: 1px solid #F2F2F2;
+          &:before {
+            content: url(../images/arrow-nd.svg);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            line-height: 0;
+          }
+          a {
+            color: $col-blue;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .btns-wrap {
+      display: flex;
+      align-items: center;
+      margin-left: 100px;
+      @include respond-to-max(desktop) {
+        margin-left: 30px;
+      }
+      @include respond-to-max(laptop) {
+        display: none;
+      }
+      .btn {
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+  .hamburger {
+    display: none;
+    @include respond-to-max(tablet) {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+main {
+  padding-top: 90px;
+  @include respond-to-max(tablet) {
+    padding-top: 60px;
+  }
+}
