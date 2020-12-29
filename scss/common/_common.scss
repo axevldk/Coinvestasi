@@ -23,6 +23,9 @@ html, body {
   &.xl {
     max-width: 1440px;
   }
+  &.hv {
+    max-width: 1280px;
+  }
   &.lg {
     max-width: 1170px;
   }
@@ -44,8 +47,11 @@ ul, ol {
   margin: 0;
   padding: 0;
 }
-a, input, button, select {
+a, input, button, select, textarea {
+  outline: none;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
+  font-family: Poppins;
 }
 a {
   text-decoration: none;
@@ -155,5 +161,15 @@ p {
   }
   &-right {
     text-align: right !important;
+  }
+}
+.h-desktop {
+  @include respond-to-min(tablet) {
+    display: none !important;
+  }
+}
+.h-mobile {
+  @include respond-to-max(tablet) {
+    display: none !important;
   }
 }

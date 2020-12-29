@@ -1,0 +1,1088 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="./home.php" />
+    <title>Mining Bitcoin</title>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="icon" type="image/svg" href="./images/logo_m.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      @import './css/style.css';
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container xl">
+        <div class="logo-wrap">
+          <a href="#">
+            <amp-img alt="Coinvestasi" class="img-d" src="./images/logo.svg" width="215" height="42"></amp-img>
+            <amp-img alt="Coinvestasi" class="img-m" src="./images/logo_m.svg" width="31" height="31" ></amp-img>
+          </a>
+        </div>
+        <div [class]="headerStatus ? 'menu-wrap is-active' : 'menu-wrap'" class="menu-wrap">
+          <ul class="menu">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Aplikasi</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+          </ul>
+          <div class="btns-wrap">
+            <a href="#" class="btn btn-yellow">Button</a>
+            <a href="#" class="btn btn-blue">Button</a>
+          </div>
+        </div>
+        <div [class]="headerStatus ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" class="hamburger hamburger--collapse" on="tap:AMP.setState({headerStatus: !headerStatus})" tabIndex="0" role="toggle-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="exchange-intro">
+        <div class="container lg">
+          <h1>Komparasi Exchanges Beli Bitcoin Indonesia Terbaik</h1>
+        </div>
+      </section>
+      <section class="exchange-filter">
+        <div class="container xl">
+          <div class="left-wrap">
+          </div>
+          <div class="filter-wrap">
+            <input type="text" name="search-exchange" id="search-exchange" value="Bitcoin">
+            <a href="" class="btn btn-yellow">Search</a>
+          </div>
+        </div>
+      </section>
+      <section class="exchange-entry">
+        <div class="container xl">
+          <div class="filter-wrap">
+            <button href="" class="btn btn-yellow h-desktop filter-btn" on="tap:AMP.setState({visible: !visible})">Filter</button>
+            <div class="filter-group" [class]="visible ? 'show filter-group' : 'hide filter-group'">
+              <div class="sng-group">
+                <p>Koin</p>
+                <div class="input-group">
+                  <div class="input-field">
+                    <input type="checkbox" name="koin-btc" id="koin-btc">
+                    <label for="koin-btc">Bitcoin</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="koin-ethereum" id="koin-ethereum">
+                    <label for="koin-ethereum">Ethereum</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="koin-litecoin" id="koin-litecoin">
+                    <label for="koin-litecoin">Litecoin</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="koin-ripple" id="koin-ripple">
+                    <label for="koin-ripple">Ripple</label>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-group">
+                <p>Platform</p>
+                <div class="input-group">
+                  <div class="input-field">
+                    <input type="checkbox" name="platform-ios" id="platform-ios">
+                    <label for="platform-ios">IOS</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="platform-android" id="platform-android">
+                    <label for="platform-android">Android</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="platform-website" id="platform-website">
+                    <label for="platform-website">Website</label>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-group">
+                <p>Bahasa</p>
+                <div class="input-group">
+                  <div class="input-field">
+                    <input type="checkbox" name="bahasa-indonesia" id="bahasa-indonesia">
+                    <label for="bahasa-indonesia">Indonesia</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="bahasa-inggris" id="bahasa-inggris">
+                    <label for="bahasa-inggris">Inggris</label>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-group">
+                <p>Hash Power</p>
+                <div class="input-group">
+                  <div class="input-field">
+                    <input type="checkbox" name="bahasa-1" id="bahasa-1">
+                    <label for="bahasa-1">1</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="bahasa-2" id="bahasa-2">
+                    <label for="bahasa-2">2</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="bahasa-3" id="bahasa-3">
+                    <label for="bahasa-3">3</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="bahasa-4" id="bahasa-4">
+                    <label for="bahasa-4">4</label>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-group">
+                <p>Rating</p>
+                <div class="input-group rating-group">
+                  <div class="input-field">
+                    <input type="checkbox" name="rating-4" id="rating-4">
+                    <label for="rating-4">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      & more
+                    </label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="rating-3" id="rating-3">
+                    <label for="rating-3">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      & more
+                    </label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="rating-2" id="rating-2">
+                    <label for="rating-2">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      & more
+                    </label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="rating-1" id="rating-1">
+                    <label for="rating-1">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      & more
+                    </label>
+                  </div>
+                  <div class="input-field">
+                    <input type="checkbox" name="rating-any" id="rating-any">
+                    <label for="rating-any">Any rating</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group" [class]="visible ? 'show btn-group' : 'hide btn-group'">
+              <a href="" class="btn btn-yellow">Search</a>
+              <a href="" class="btn btn-blue">Remove</a>
+            </div>
+          </div>
+          <div class="entry-content">
+            <p class="total sm">13 exchanges with 68 reviews that match your criteria</p>
+            <div class="exchange-wrap">
+              <div class="sng-exchange">
+                <div class="content-wrap">
+                  <div class="img-wrap">
+                    <amp-img src="./images/icons/ico-pintu.png" width="100" height="20" layout="responsive" alt="Pintu"></amp-img>
+                  </div>
+                  <div class="detail-wrap">
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                    <p class="desc">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="status">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-check.svg" width="22" height="22" layout="responsive" alt="Status"></amp-img>
+                      </div>
+                      <p class="sm">Terdaftar</p>
+                    </div>
+                    <div class="rating-wrap">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      <p class="sm">5 Ulasan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-wrap">
+                  <div class="btn-wrap">
+                    <a href="" class="btn btn-blue bordered">Lebih lanjut</a>
+                    <a href="" class="btn btn-blue">Daftar</a>
+                  </div>
+                </div>
+                <div class="mobile-detail-wrap h-desktop">
+                  <button [class]="visible_1 ? '' : 'active'" [text]="visible_1 ? 'Hide Details' : 'Show Details'" 
+                  on="tap:AMP.setState({visible_1: !visible_1})" class="active">Show Details</button>
+                  <div [class]="visible_1 ? 'show detail-wrap' : 'hide detail-wrap'" class="hide detail-wrap">
+                    <p class="desc sm">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-exchange">
+                <div class="content-wrap">
+                  <div class="img-wrap">
+                    <amp-img src="./images/icons/ico-pintu.png" width="100" height="20" layout="responsive" alt="Pintu"></amp-img>
+                  </div>
+                  <div class="detail-wrap">
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                    <p class="desc">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="status">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-check.svg" width="22" height="22" layout="responsive" alt="Status"></amp-img>
+                      </div>
+                      <p class="sm">Terdaftar</p>
+                    </div>
+                    <div class="rating-wrap">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      <p class="sm">5 Ulasan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-wrap">
+                  <div class="btn-wrap">
+                    <a href="" class="btn btn-blue bordered">Lebih lanjut</a>
+                    <a href="" class="btn btn-blue">Daftar</a>
+                  </div>
+                </div>
+                <div class="mobile-detail-wrap h-desktop">
+                  <button [class]="visible_2 ? '' : 'active'" [text]="visible_2 ? 'Hide Details' : 'Show Details'" 
+                  on="tap:AMP.setState({visible_2: !visible_2})" class="active">Show Details</button>
+                  <div [class]="visible_2 ? 'show detail-wrap' : 'hide detail-wrap'" class="hide detail-wrap">
+                    <p class="desc sm">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-exchange">
+                <div class="content-wrap">
+                  <div class="img-wrap">
+                    <amp-img src="./images/icons/ico-pintu.png" width="100" height="20" layout="responsive" alt="Pintu"></amp-img>
+                  </div>
+                  <div class="detail-wrap">
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                    <p class="desc">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="status">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-check.svg" width="22" height="22" layout="responsive" alt="Status"></amp-img>
+                      </div>
+                      <p class="sm">Terdaftar</p>
+                    </div>
+                    <div class="rating-wrap">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      <p class="sm">5 Ulasan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-wrap">
+                  <div class="btn-wrap">
+                    <a href="" class="btn btn-blue bordered">Lebih lanjut</a>
+                    <a href="" class="btn btn-blue">Daftar</a>
+                  </div>
+                </div>
+                <div class="mobile-detail-wrap h-desktop">
+                  <button [class]="visible_3 ? '' : 'active'" [text]="visible_3 ? 'Hide Details' : 'Show Details'" 
+                  on="tap:AMP.setState({visible_3: !visible_3})" class="active">Show Details</button>
+                  <div [class]="visible_3 ? 'show detail-wrap' : 'hide detail-wrap'" class="hide detail-wrap">
+                    <p class="desc sm">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-exchange">
+                <div class="content-wrap">
+                  <div class="img-wrap">
+                    <amp-img src="./images/icons/ico-pintu.png" width="100" height="20" layout="responsive" alt="Pintu"></amp-img>
+                  </div>
+                  <div class="detail-wrap">
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                    <p class="desc">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="status">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-check.svg" width="22" height="22" layout="responsive" alt="Status"></amp-img>
+                      </div>
+                      <p class="sm">Terdaftar</p>
+                    </div>
+                    <div class="rating-wrap">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      <p class="sm">5 Ulasan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-wrap">
+                  <div class="btn-wrap">
+                    <a href="" class="btn btn-blue bordered">Lebih lanjut</a>
+                    <a href="" class="btn btn-blue">Daftar</a>
+                  </div>
+                </div>
+                <div class="mobile-detail-wrap h-desktop">
+                  <button [class]="visible_4 ? '' : 'active'" [text]="visible_4 ? 'Hide Details' : 'Show Details'" 
+                  on="tap:AMP.setState({visible_4: !visible_4})" class="active">Show Details</button>
+                  <div [class]="visible_4 ? 'show detail-wrap' : 'hide detail-wrap'" class="hide detail-wrap">
+                    <p class="desc sm">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="sng-exchange">
+                <div class="content-wrap">
+                  <div class="img-wrap">
+                    <amp-img src="./images/icons/ico-pintu.png" width="100" height="20" layout="responsive" alt="Pintu"></amp-img>
+                  </div>
+                  <div class="detail-wrap">
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                    <p class="desc">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                  </div>
+                  <div class="info-wrap">
+                    <div class="status">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-check.svg" width="22" height="22" layout="responsive" alt="Status"></amp-img>
+                      </div>
+                      <p class="sm">Terdaftar</p>
+                    </div>
+                    <div class="rating-wrap">
+                      <div class="rating-icons">
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap active">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                        <div class="icon-wrap">
+                          <amp-img src="./images/ico-star.svg" width="14" height="14" layout="responsive" alt="Star"></amp-img>
+                        </div>
+                      </div>
+                      <p class="sm">5 Ulasan</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-wrap">
+                  <div class="btn-wrap">
+                    <a href="" class="btn btn-blue bordered">Lebih lanjut</a>
+                    <a href="" class="btn btn-blue">Daftar</a>
+                  </div>
+                </div>
+                <div class="mobile-detail-wrap h-desktop">
+                  <button [class]="visible_5 ? '' : 'active'" [text]="visible_5 ? 'Hide Details' : 'Show Details'" 
+                  on="tap:AMP.setState({visible_5: !visible_5})" class="active">Show Details</button>
+                  <div [class]="visible_5 ? 'show detail-wrap' : 'hide detail-wrap'" class="hide detail-wrap">
+                    <p class="desc sm">PINTU is one of the largest cryptocurrency exchanges worldwide by market volume and has offices in Indonesia.</p>
+                    <ul class="details">
+                      <li>
+                        <p class="sm label">Ease of Use</p>
+                        <p class="sm value">Excellent</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Value for Money</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Verification</p>
+                        <p class="sm value">&lt; 24 Hours</p>
+                      </li>
+                      <li>
+                        <p class="sm label">Support</p>
+                        <p class="sm value">Good</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="btn btn-yellow btn-fw load-more">Lihat hasil lainnya</a>
+            <div class="disclaimer">
+              <p>Disclaimer</p>
+              <p class="sm">Perdagangan Digital Asset (Bitcoin, Ethereum, dll) merupakan aktivitas beresiko tinggi, ketahui dan kelola risiko Anda dalam melakukan perdagangan Digital Asset. Perdagangan Digital Asset sebaiknya dilakukan pada platform</p>
+              <p class="sm">Kami tidak memaksa pengguna untuk membeli atau menjual Digital Asset, sebagai investasi, atau aksi mencari keuntungan. Semua keputusan perdagangan Digital Asset merupakan keputusan independen oleh pengguna.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="entry">
+        <div class="container">
+          <div class="entry-wrap">
+            <p>Komparasi Bitcoin dan Crypto Exchange Lokal. Seiring dengan semakin berkembangnya dunia blockchain dan kripto di Indonesia, para pelaku bisnis mulai kedatangan pemain-pemain baru di dunia exchange. Mengingat pasar Indonesia yang sangat besar, terdapat lebih dari 16 bitcoin dan crypto exchange yang hadir di Indonesia dan tidak menutup kemungkinan bahwa akan ada lebih banyak pemain lagi yang akan masuk.</p>
+            <p>Untuk Anda yang masih bingung ingin berinvestasi aset kripto melalui exchange yang mana, tim Coinvestasi telah menyusun perbandingan daftar exchange di atas berdasarkan beberapa aspek, di antaranya adalah aplikasi, trading dan withdrawal fee, aset kripto yang tersedia, serta bentuk pembayaran yang diterima.</p>
+            <h2>Aplikasi Mobile</h2>
+            <amp-img media="(min-width: 450px)" alt="Thumbnail" src="./images/thumbnail_411x411.png" width="411" height="411"></amp-img>
+            <amp-img media="(max-width: 449px)" alt="Thumbnail" src="./images/thumbnail_411x411.png" layout="responsive" width="411" height="411"></amp-img>
+            <p>Semua bitcoin dan crypto exchange saat ini dapat diakses melalui browser desktop, namun beberapa exchange sudah mulai membangun aplikasi exchange mereka sehingga dapat dengan mudah diakses melalui smartphone pengguna, mengingat penggunaan smartphone sudah semakin marak.</p>
+            <h2>Biaya jual beli bitcoin dan cryptocurrency</h2>
+            <p>Dalam melakukan trading atau jual/beli aset kripto, para pengguna biasanya akan dikenakan biaya. Biaya ini berbeda-beda tergantung dari posisi yang diambil. Terdapat dua jenis trading fee yang dikenakan, yaitu ketika pengguna menjadi market maker dan ketika pengguna menjadi market taker..</p>
+            <p>Market Maker adalah member exchange yang menjual atau membeli aset digital dengan menggunakan harga antrian atau menggunakan limit. Misalnya saat member ingin membeli BTC 10.000.000 di harga 100.000.000, sementara saat ini BTC di harga 105.000.000. Maka member akan ‘mengantri’ untuk menunggu harga BTC turun di harga 100.000.000, baru terbeli 0,1 BTC. Begitu juga sebaliknya, saat ingin menjual di bawah harga market beli tertinggi.</p>
+            <p>Market Taker adalah member exchange yang membeli atau menjual aset digital dengan menggunakan harga yang sudah tertera di dalam antrian. Market Taker biasanya membeli/menjual menggunakan metode Jual/Beli instan atau Jual/Beli tetapi memasukan harga pembelian dengan harga di atas harga market jual tertinggi, atau melakukan penjualan dengan harga di atas harga market beli tertinggi</p>
+            <h2>Biaya Penarikan</h2>
+            <p>Withdrawal fee adalah biaya yang dikenakan kepada pengguna ketika pengguna menarik sejumlah aset kripto ke dalam mata uang FIAT (Rupiah) ataupun dalam bentuk aset kripto lainnya ke wallet pribadi.</p>
+            <h2>Aset Kripto</h2>
+            <amp-img media="(min-width: 450px)" alt="Thumbnail" src="./images/thumbnail_411x411.png" width="411" height="411"></amp-img>
+            <amp-img media="(max-width: 449px)" alt="Thumbnail" src="./images/thumbnail_411x411.png" layout="responsive" width="365" height="640"></amp-img>
+            <p>Setiap platform bitcoin dan crypto exchange memiliki jenis aset kripto yang berbeda-beda yang dapat diperjual belikan pada platformnya masing-masing. Hal ini dapat menjadi pertimbangan Anda dalam memilih platform exchange yang ingin Anda gunakan.</p>
+            <h2>Bentuk Pembayaran</h2>
+            <p>Dalam melakukan deposit, pengguna harus memasukkan sejumlah rupiah ke dalam wallet setiap exchange dan setiap exchange memiliki bentuk pembayaran yang berbeda-beda, seperti transfer bank, transfer aset kripto, ataupin melalui kartu kredit dan debit.</p>
+            <p>Dari daftar exchange di atas, beberapa exchange sudah tergabung dalam Asosiasi Blockchain Indonesia (A-B-I), yang merupakan lembaga resmi yang terdiri dari para pelaku bisnis utama di dunia Blockchain dan Kripto di Indonesia dan bertujuan untuk memudahkan akselerasi adopsi teknologi blockchain. Beberapa exchange yang terlah tergabung dalam A-B-I adalah Indodax, Coinone Indonesia, Luno Indonesia, Rekeningku.com, Biido, dan Bitocto.</p>
+            <p>Melihat komparasi exchange lokal di atas, Anda sekarang dapat menentukan di platform exchange mana Anda ingin melakukan trading aset kripto di Indonesia.</p>            
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="faq-wrap">
+            <div class="faq-header">
+              <div class="ico-wrap">
+                <amp-img alt="CTA" src="./images/ico-faq.svg" layout="responsive" width="40" height="40" ></amp-img>
+              </div>
+              <h2>Pertanyaan penting</h2>
+            </div>
+            <amp-accordion class="faq-body" expand-single-section>
+              <section class="faq-item" expanded>
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+            </amp-accordion>
+          </div>
+        </div>
+      </section>
+      <section class="post-slider hide-img-mobile">
+        <div class="container md">
+          <h2>Panduan</h2>
+          <div class="slider-wrap">
+            <amp-selector 
+              id="panduanSelector" 
+              on="select:panduanCarousel.goToSlide(index=event.targetOption)" 
+              layout="container"> 
+              <div option="0" selected></div>
+              <div option="1"></div>
+              <div option="2"></div>
+              <div option="3"></div>
+            </amp-selector>
+            <amp-carousel type="slides"
+              layout="fill"
+              id="panduanCarousel"
+              on="slideChange:panduanSelector.toggle(index=event.index, value=true)">
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/image03.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">Theme</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                </div>
+              </div>
+            </amp-carousel>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="load-more-link">Lihat semua panduan DeFi</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container xl">
+        <div class="main-wrap">
+          <div class="logo-wrap">
+            <a href="#">
+              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <p>Coinvestasi adalah platform Indonesia terkemuka untuk acara dan informasi terkait mata uang kripto, aset digital, dan teknologi blockchain.</p>
+          </div>
+          <ul class="social-wrap">
+            <li><a href="#"><amp-img src="./images/ico-facebook.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-instagram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-twitter.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-youtube.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+          </ul>
+          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+        </div>
+        <div class="menu-wrap">
+          <div class="sng-wrap">
+            <h2>Jelajahi</h2>
+            <ul class="menu">
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Mulai</h2>
+            <ul class="menu">
+              <li><a href="#">Beli Bitcoin</a></li>
+              <li><a href="#">Trading Bitcoin</a></li>
+              <li><a href="#">Bitcoin gratis</a></li>
+              <li><a href="#">Mining bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Berita</h2>
+            <ul class="menu">
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Kosa kata</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Pertanyaan</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Aplikasi</h2>
+            <ul class="menu">
+              <li><a href="#">Exchange Bitcoin</a></li>
+              <li><a href="#">Dompet Bitcoin</a></li>
+              <li><a href="#">Mining Bitcoin</a></li>
+              <li><a href="#">Faucet Bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Acara</h2>
+            <ul class="menu">
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Tentang</h2>
+            <ul class="menu">
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Dalam berita</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Advertise</h2>
+            <ul class="menu">
+              <li><a href="#">Our partners</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">How Coinvestasi works</a></li>
+              <li><a href="#">F.A.Q</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <amp-state id="props">
+      <script type="application/json">
+        {
+          "headerStatus": true
+        }
+      </script>
+  </amp-state>
+  </body>
+</html>

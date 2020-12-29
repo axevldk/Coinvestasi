@@ -1,0 +1,533 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="./home.php" />
+    <title>Mining Bitcoin</title>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="icon" type="image/svg" href="./images/logo_m.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      @import './css/style.css';
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container xl">
+        <div class="logo-wrap">
+          <a href="#">
+            <amp-img alt="Coinvestasi" class="img-d" src="./images/logo.svg" width="215" height="42"></amp-img>
+            <amp-img alt="Coinvestasi" class="img-m" src="./images/logo_m.svg" width="31" height="31" ></amp-img>
+          </a>
+        </div>
+        <div [class]="headerStatus ? 'menu-wrap is-active' : 'menu-wrap'" class="menu-wrap">
+          <ul class="menu">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Aplikasi</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+          </ul>
+          <div class="btns-wrap">
+            <a href="#" class="btn btn-yellow">Button</a>
+            <a href="#" class="btn btn-blue">Button</a>
+          </div>
+        </div>
+        <div [class]="headerStatus ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" class="hamburger hamburger--collapse" on="tap:AMP.setState({headerStatus: !headerStatus})" tabIndex="0" role="toggle-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="event-intro">
+        <div class="container lg">
+          <div class="ttl-wrap">
+            <h2>Top Event</h2>
+            <div class="btn-wrap">
+              <p>Holding an event?</p>
+              <a href="" class="btn btn-yellow">Let us know</a>
+            </div>
+          </div>
+          <div class="img-wrap">
+            <amp-img media="(min-width: 768px)" src="./images/image09.png" width="1140" height="445" layout="responsive" alt="Event"></amp-img>
+            <amp-img media="(max-width: 767px)" src="./images/image09_m.png" width="285" height="220" layout="responsive" alt="Event"></amp-img>
+          </div>
+          <div class="ctn-wrap">
+            <div class="ctn-top">
+              <div class="txt-wrap">
+                <h3>CV VC Global Report - Custodians</h3>
+                <div class="details">
+                  <p class="date">4 November</p>
+                  <p class="topic">Financial Events, Technology Events</p>
+                  <p class="price">100,000 IDR</p>
+                  <p class="location">Jakarta, ID</p>
+                </div>
+              </div>
+              <div class="btn-wrap">
+                <a href="" class="btn btn-yellow">Visit Website</a>
+              </div>
+            </div>
+            <p class="dsc sm">Custody services are available in the crypto space. Nevertheless, it is still a fledgling market and its importance has not yet garnered the recognition that it deserves; custody providers are vital for the adoption of cryptocurrencies and crucial within the institutional space.</p>
+          </div>
+        </div>
+      </section>
+      <section class="events-calendar">
+        <div class="container hv">
+          <h2>Crypto Events Calendar</h2>
+          <div class="filter-wrap">
+            <a href="" class="btn btn-yellow">
+              <amp-img src="./images/ico-filter.svg" width="20" height="16" alt=""></amp-img>
+              Add Filter
+            </a>
+          </div>
+          <div class="table-wrap h-mobile">
+            <table>
+              <thead>
+                <tr>
+                  <th class="active">Date</th>
+                  <th>Event</th>
+                  <th>Dates</th>
+                  <th>Event Type</th>
+                  <th>Location</th>
+                  <th>Price</th>
+                  <th>Information</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="date"><span class="day">2</span> <span class="dow">Mon</span></p>
+                    <p>November</p>
+                  </td>
+                  <td><p>Blockchain Summit Latam</p><p class="sm">Short description maximum 120 characters maximum 120 char</p></td>
+                  <td>2 Nov - 6 Nov</td>
+                  <td><p class="sm">Financial Events</p></td>
+                  <td><p class="sm">Jakarta</p></td>
+                  <td><p class="sm">100,000 IDR</p></td>
+                  <td><a href="" class="btn btn-yellow">Visit Website</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="date"><span class="day">2</span> <span class="dow">Mon</span></p>
+                    <p>November</p>
+                  </td>
+                  <td><p>Blockchain Summit Latam</p><p class="sm">Short description maximum 120 characters maximum 120 char</p></td>
+                  <td>2 Nov - 6 Nov</td>
+                  <td><p class="sm">Financial Events</p></td>
+                  <td><p class="sm">Jakarta</p></td>
+                  <td><p class="sm">100,000 IDR</p></td>
+                  <td><a href="" class="btn btn-yellow">Visit Website</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="date"><span class="day">2</span> <span class="dow">Mon</span></p>
+                    <p>November</p>
+                  </td>
+                  <td><p>Blockchain Summit Latam</p><p class="sm">Short description maximum 120 characters maximum 120 char</p></td>
+                  <td>2 Nov - 6 Nov</td>
+                  <td><p class="sm">Financial Events</p></td>
+                  <td><p class="sm">Jakarta</p></td>
+                  <td><p class="sm">100,000 IDR</p></td>
+                  <td><a href="" class="btn btn-yellow">Visit Website</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="event-lst-wrap h-desktop">
+            <div class="sng-event">
+              <div class="info-holder">
+                <div class="date">
+                  <span class="dow">Mon</span>
+                  <span class="day">2</span>
+                  <span class="month">November</span>
+                </div>
+                <p class="location">Jakarta</p>
+                <p class="topic">Financial Events, Technology Events</p>
+                <p class="ttl">Blockchain Summit Latam</p>
+              </div>
+              <p [class]="visible_1 ? 'show dsc' : 'hide dsc'" class="hide dsc">Short description maximum 120 characters maximum 120 char</p>
+              <div class="btn-wrap">
+                <a href="" class="btn btn-yellow">Visit Website</a>
+                <button [class]="visible_1 ? 'toggle' : 'toggle active'" [text]="visible_1 ? 'Hide Details' : 'Show Details'" 
+                on="tap:AMP.setState({visible_1: !visible_1})" class="toggle active">Show Details</button>
+              </div>
+            </div>
+            <div class="sng-event">
+              <div class="info-holder">
+                <div class="date">
+                  <span class="dow">Mon</span>
+                  <span class="day">2</span>
+                  <span class="month">November</span>
+                </div>
+                <p class="location">Jakarta</p>
+                <p class="topic">Financial Events, Technology Events</p>
+                <p class="ttl">Blockchain Summit Latam</p>
+              </div>
+              <p [class]="visible_2 ? 'show dsc' : 'hide dsc'" class="hide dsc">Short description maximum 120 characters maximum 120 char</p>
+              <div class="btn-wrap">
+                <a href="" class="btn btn-yellow">Visit Website</a>
+                <button [class]="visible_2 ? 'toggle' : 'toggle active'" [text]="visible_2 ? 'Hide Details' : 'Show Details'" 
+                on="tap:AMP.setState({visible_2: !visible_2})" class="toggle active">Show Details</button>
+              </div>
+            </div>
+            <div class="sng-event">
+              <div class="info-holder">
+                <div class="date">
+                  <span class="dow">Mon</span>
+                  <span class="day">2</span>
+                  <span class="month">November</span>
+                </div>
+                <p class="location">Jakarta</p>
+                <p class="topic">Financial Events, Technology Events</p>
+                <p class="ttl">Blockchain Summit Latam</p>
+              </div>
+              <p [class]="visible_3 ? 'show dsc' : 'hide dsc'" class="hide dsc">Short description maximum 120 characters maximum 120 char</p>
+              <div class="btn-wrap">
+                <a href="" class="btn btn-yellow">Visit Website</a>
+                <button [class]="visible_3 ? 'toggle' : 'toggle active'" [text]="visible_3 ? 'Hide Details' : 'Show Details'" 
+                on="tap:AMP.setState({visible_3: !visible_3})" class="toggle active">Show Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="post-slider show-img-mobile">
+        <div class="container md">
+          <h2>Events Press Releases</h2>
+          <div class="slider-wrap">
+            <amp-selector 
+              id="beritaSelector" 
+              on="select:beritaCarousel.goToSlide(index=event.targetOption)" 
+              layout="container"> 
+              <div option="0" selected></div>
+              <div option="1"></div>
+              <div option="2"></div>
+              <div option="3"></div>
+            </amp-selector>
+            <amp-carousel type="slides"
+              layout="fill"
+              id="beritaCarousel"
+              on="slideChange:beritaSelector.toggle(index=event.index, value=true)">
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+              </div>
+              <div class="sng-wrap">
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+                <div class="sng-post">
+                  <div class="img-wrap">
+                    <amp-img src="./images/thumbnail_300x169.png"
+                      width="300"
+                      height="169"
+                      layout="responsive"
+                      alt="Post Thumbnail">
+                    </amp-img>
+                  </div>
+                  <div class="info">
+                    <p class="category">News</p>
+                    <p class="time">21 minutes ago</p>
+                  </div>
+                  <a class="post-title" href="#"><h3>Event Press Releases</h3></a>
+                </div>
+              </div>
+            </amp-carousel>
+          </div>
+          <div class="btn-wrap">
+            <a href="#" class="load-more-link">See all event press releases</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container xl">
+        <div class="main-wrap">
+          <div class="logo-wrap">
+            <a href="#">
+              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <p>Coinvestasi adalah platform Indonesia terkemuka untuk acara dan informasi terkait mata uang kripto, aset digital, dan teknologi blockchain.</p>
+          </div>
+          <ul class="social-wrap">
+            <li><a href="#"><amp-img src="./images/ico-facebook.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-instagram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-twitter.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-youtube.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+          </ul>
+          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+        </div>
+        <div class="menu-wrap">
+          <div class="sng-wrap">
+            <h2>Jelajahi</h2>
+            <ul class="menu">
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Mulai</h2>
+            <ul class="menu">
+              <li><a href="#">Beli Bitcoin</a></li>
+              <li><a href="#">Trading Bitcoin</a></li>
+              <li><a href="#">Bitcoin gratis</a></li>
+              <li><a href="#">Mining bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Berita</h2>
+            <ul class="menu">
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Kosa kata</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Pertanyaan</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Aplikasi</h2>
+            <ul class="menu">
+              <li><a href="#">Exchange Bitcoin</a></li>
+              <li><a href="#">Dompet Bitcoin</a></li>
+              <li><a href="#">Mining Bitcoin</a></li>
+              <li><a href="#">Faucet Bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Acara</h2>
+            <ul class="menu">
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Tentang</h2>
+            <ul class="menu">
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Dalam berita</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Advertise</h2>
+            <ul class="menu">
+              <li><a href="#">Our partners</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">How Coinvestasi works</a></li>
+              <li><a href="#">F.A.Q</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <amp-state id="props">
+      <script type="application/json">
+        {
+          "headerStatus": true
+        }
+      </script>
+  </amp-state>
+  </body>
+</html>

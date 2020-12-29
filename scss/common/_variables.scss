@@ -8,12 +8,14 @@ $col-inactive: #DEDEDE;
 
 $break-mobile: 639px;
 $break-tablet: 767px;
-$break-laptop: 993px;
+$break-switcher: 991px;
+$break-laptop: 1199px;
 $break-desktop: 1399px;
 
 $break-mobile-min: 640px;
 $break-tablet-min: 768px;
-$break-laptop-min: 992px;
+$break-switcher-min: 992px;
+$break-laptop-min: 1200px;
 $break-desktop-min: 1400px;
 
 @mixin respond-to-max($media) {
@@ -22,6 +24,9 @@ $break-desktop-min: 1400px;
   }
   @else if $media == tablet {
     @media (max-width: $break-tablet) { @content; }
+  }
+  @else if $media == switcher {
+    @media (max-width: $break-switcher) { @content; }
   }
   @else if $media == laptop {
     @media (max-width: $break-laptop) { @content; }
@@ -37,6 +42,9 @@ $break-desktop-min: 1400px;
   }
   @else if $media == tablet {
     @media (min-width: $break-tablet-min) { @content; }
+  }
+  @else if $media == switcher {
+    @media (min-width: $break-switcher-min) { @content; }
   }
   @else if $media == laptop {
     @media (min-width: $break-laptop-min) { @content; }

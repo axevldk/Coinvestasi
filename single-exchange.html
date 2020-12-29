@@ -1,0 +1,656 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="canonical" href="./home.php" />
+    <title>Exchange Guide</title>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link rel="icon" type="image/svg" href="./images/logo_m.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <style amp-custom>
+      @import './css/style.css';
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container xl">
+        <div class="logo-wrap">
+          <a href="#">
+            <amp-img alt="Coinvestasi" class="img-d" src="./images/logo.svg" width="215" height="42"></amp-img>
+            <amp-img alt="Coinvestasi" class="img-m" src="./images/logo_m.svg" width="31" height="31" ></amp-img>
+          </a>
+        </div>
+        <div [class]="headerStatus ? 'menu-wrap is-active' : 'menu-wrap'" class="menu-wrap">
+          <ul class="menu">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Aplikasi</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+            <li><a href="#">Theme</a></li>
+          </ul>
+          <div class="btns-wrap">
+            <a href="#" class="btn btn-yellow">Button</a>
+            <a href="#" class="btn btn-blue">Button</a>
+          </div>
+        </div>
+        <div [class]="headerStatus ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'" class="hamburger hamburger--collapse" on="tap:AMP.setState({headerStatus: !headerStatus})" tabIndex="0" role="toggle-menu">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="single-exchange-intro">
+        <div class="container lg">
+          <div class="content-wrap">
+            <div class="info-holder">
+              <div class="img-wrap">
+                <amp-img src="./images/icons/ico-pintu.png" width="160" height="33" alt="Pintu"></amp-img>
+              </div>
+              <ul class="social-wrap">
+                <li><a href="#"><amp-img src="./images/ico-instagram-b.svg" width="18" height="18" layout="responsive"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-telegram-b.svg" width="18" height="18" layout="responsive"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-facebook-b.svg" width="18" height="18" layout="responsive"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-twitter-b.svg" width="18" height="18" layout="responsive"></amp-img></a></li>
+              </ul>
+              <a href="" class="btn btn-blue btn-fw">Bandingkan</a>
+            </div>
+            <div class="txt-holder">
+              <h1>Pintu</h1>
+              <p>Pintu adalah bursa kripto dengan fitur yang paling mudah digunakan untuk jual-beli Bitcoin dan aset kripto lainnya. Buka Pintu dan temukan dunia kripto yang tanpa batas!</p>
+            </div>
+            <div class="rating-holder">
+              <div class="rating-wrap">
+                <div class="rating-icons">
+                  <div class="icon-wrap active">
+                    <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                  </div>
+                  <div class="icon-wrap active">
+                    <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                  </div>
+                  <div class="icon-wrap active">
+                    <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                  </div>
+                  <div class="icon-wrap active">
+                    <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                  </div>
+                  <div class="icon-wrap">
+                    <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                  </div>
+                </div>
+                <p>5 Ulasan</p>
+              </div>
+              <a href="#" class="btn btn-yellow btn-fw">Daftar sekarang</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="post-entry">
+        <div class="container md">
+          <div class="sticky-wrap">
+            <div class="sticky-box">
+              <div class="img-wrap"></div>
+              <ul class="social-wrap">
+                <li><a href="#"><amp-img src="./images/ico-duplicate-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-linkedin-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-facebook-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+                <li><a href="#"><amp-img src="./images/ico-twitter-b.svg" alt="" width="24" height="24"></amp-img></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry-content">
+            <div class="exchange-info">
+              <div class="ttl-holder">
+                <h2>Tentang Pintu</h2>
+                <ul class="social-wrap h-desktop">
+                  <li><a href="#"><amp-img src="./images/ico-duplicate-b.svg" alt="" width="20" height="20"></amp-img></a></li>
+                  <li><a href="#"><amp-img src="./images/ico-linkedin-b.svg" alt="" width="20" height="20"></amp-img></a></li>
+                  <li><a href="#"><amp-img src="./images/ico-facebook-b.svg" alt="" width="20" height="20"></amp-img></a></li>
+                  <li><a href="#"><amp-img src="./images/ico-twitter-b.svg" alt="" width="20" height="20"></amp-img></a></li>
+                </ul>
+              </div>
+              <div class="info-holder">
+                <div class="sng-info">
+                  <h3>Informasi Umum</h3>
+                  <div class="details">
+                    <div class="sng-detail full">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-apartment.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">The City Tower Lantai 27, Jalan M.H Thamrin No.81, Menteng, Jakarta Pusat - DKI Jakarta 10310</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-people.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">Jeth Soetoyo, CEO</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-fingerprint.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">2FA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-info">
+                  <h3>Informasi Umum</h3>
+                  <div class="details">
+                    <div class="sng-detail full">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-apartment.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">The City Tower Lantai 27, Jalan M.H Thamrin No.81, Menteng, Jakarta Pusat - DKI Jakarta 10310</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-people.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">Jeth Soetoyo, CEO</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-fingerprint.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">2FA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-info">
+                  <h3>Informasi Umum</h3>
+                  <div class="details">
+                    <div class="sng-detail full">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-apartment.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">The City Tower Lantai 27, Jalan M.H Thamrin No.81, Menteng, Jakarta Pusat - DKI Jakarta 10310</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-people.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">Jeth Soetoyo, CEO</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-fingerprint.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">2FA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-info">
+                  <h3>Informasi Umum</h3>
+                  <div class="details">
+                    <div class="sng-detail full">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-apartment.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">The City Tower Lantai 27, Jalan M.H Thamrin No.81, Menteng, Jakarta Pusat - DKI Jakarta 10310</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-people.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">Jeth Soetoyo, CEO</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-fingerprint.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">2FA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-info">
+                  <h3>Informasi Umum</h3>
+                  <div class="details">
+                    <div class="sng-detail full">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-apartment.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">The City Tower Lantai 27, Jalan M.H Thamrin No.81, Menteng, Jakarta Pusat - DKI Jakarta 10310</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-people.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">Jeth Soetoyo, CEO</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-fingerprint.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">2FA</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="sng-info">
+                  <h3>Informasi Umum</h3>
+                  <div class="details">
+                    <div class="sng-detail full">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-apartment.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">The City Tower Lantai 27, Jalan M.H Thamrin No.81, Menteng, Jakarta Pusat - DKI Jakarta 10310</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-people.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">Jeth Soetoyo, CEO</p>
+                    </div>
+                    <div class="sng-detail">
+                      <div class="img-wrap">
+                        <amp-img src="./images/ico-fingerprint.svg" width="18" height="18" layout="responsive" alt="Icon"></amp-img>
+                      </div>
+                      <p class="sm">2FA</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="icons-box">
+        <div class="container sm">
+          <h2>Panduan *exchange* terkini</h2>
+          <div class="icons-wrap">
+            <div class="sng-box">
+              <div class="ico-wrap">
+                <amp-img media="(min-width: 768px)" src="./images/ico-daftar.svg" width="65" height="65" alt="Daftar"></amp-img>
+                <amp-img media="(max-width: 767px)" src="./images/ico-daftar.svg" width="45" height="45" alt="Daftar"></amp-img>
+              </div>
+              <p class="ttl-wrap">Daftar</p>
+            </div>
+            <div class="sng-box">
+              <div class="ico-wrap">
+                <amp-img media="(min-width: 768px)" src="./images/ico-kyc.svg" width="65" height="65" alt="KYC"></amp-img>
+                <amp-img media="(max-width: 767px)" src="./images/ico-kyc.svg" width="45" height="45" alt="KYC"></amp-img>
+              </div>
+              <p class="ttl-wrap">KYC</p>
+            </div>
+            <div class="sng-box">
+              <div class="ico-wrap">
+                <amp-img media="(min-width: 768px)" src="./images/ico-deposit.svg" width="65" height="65" alt="Deposit"></amp-img>
+                <amp-img media="(max-width: 767px)" src="./images/ico-deposit.svg" width="45" height="45" alt="Deposit"></amp-img>
+              </div>
+              <p class="ttl-wrap">Deposit</p>
+            </div>
+            <div class="sng-box">
+              <div class="ico-wrap">
+                <amp-img media="(min-width: 768px)" src="./images/ico-buy.svg" width="65" height="65" alt="Beli"></amp-img>
+                <amp-img media="(max-width: 767px)" src="./images/ico-buy.svg" width="45" height="45" alt="Beli"></amp-img>
+              </div>
+              <p class="ttl-wrap">Beli</p>
+            </div>
+            <div class="sng-box">
+              <div class="ico-wrap">
+                <amp-img media="(min-width: 768px)" src="./images/ico-trade.svg" width="65" height="65" alt="Trade"></amp-img>
+                <amp-img media="(max-width: 767px)" src="./images/ico-trade.svg" width="45" height="45" alt="Trade"></amp-img>
+              </div>
+              <p class="ttl-wrap">Trade</p>
+            </div>
+            <div class="sng-box">
+              <div class="ico-wrap">
+                <amp-img media="(min-width: 768px)" src="./images/ico-withdraw.svg" width="65" height="65" alt="Withdraw"></amp-img>
+                <amp-img media="(max-width: 767px)" src="./images/ico-withdraw.svg" width="45" height="45" alt="Withdraw"></amp-img>
+              </div>
+              <p class="ttl-wrap">Withdraw</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="faq-wrap">
+            <div class="faq-header">
+              <div class="ico-wrap">
+                <amp-img alt="CTA" src="./images/ico-faq.svg" layout="responsive" width="40" height="40" ></amp-img>
+              </div>
+              <h2>Pertanyaan penting</h2>
+            </div>
+            <amp-accordion class="faq-body" expand-single-section>
+              <section class="faq-item" expanded>
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+              <section class="faq-item">
+                <h3>At what price did Bitcoin start?</h3>
+                <div class="faq-answer"><p>One BTC was valued at a fraction of a U.S. penny in early 2010. During the first quarter of 2011, it exceeded a dollar. In late 2017, its value skyrocketed, topping out at close to $20,000. You can track the price of bitcoin here.</p></div>
+              </section>
+            </amp-accordion>
+          </div>
+        </div>
+      </section>
+      <div class="rating-reviews">
+        <div class="container lg">
+          <h2>Ulasan Pintu</h2>
+          <div class="review-filter-holder">
+            <div class="ttl-wrap">
+              <h3>Ulasasn</h3>
+              <h3 class="count">141</h3>
+            </div>
+            <div class="filter-group">
+              <div class="input-field">
+                <input type="checkbox" name="excellent" id="excellent">
+                <label for="excellent">Excellent</label>
+                <div class="bar-container">
+                  <div class="bar" style="width: 88%"></div>
+                </div>
+                <p class="sm total">88%</p>
+              </div>
+              <div class="input-field">
+                <input type="checkbox" name="great" id="great">
+                <label for="great">Great</label>
+                <div class="bar-container">
+                  <div class="bar" style="width: 2%"></div>
+                </div>
+                <p class="sm total">2%</p>
+              </div>
+              <div class="input-field">
+                <input type="checkbox" name="average" id="average">
+                <label for="average">Average</label>
+                <div class="bar-container">
+                  <div class="bar" style="width: 1%"></div>
+                </div>
+                <p class="sm total">1%</p>
+              </div>
+              <div class="input-field">
+                <input type="checkbox" name="poor" id="poor">
+                <label for="poor">Poor</label>
+                <div class="bar-container">
+                  <div class="bar" style="width: 1%"></div>
+                </div>
+                <p class="sm total">1%</p>
+              </div>
+              <div class="input-field">
+                <input type="checkbox" name="bad" id="bad">
+                <label for="bad">Bad</label>
+                <div class="bar-container">
+                  <div class="bar" style="width: 1%"></div>
+                </div>
+                <p class="sm total">1%</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-review-holder">
+            <a href="">Write a review</a>
+            <div class="rating-wrap">
+              <div class="rating-icons">
+                <div class="icon-wrap">
+                  <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                </div>
+                <div class="icon-wrap">
+                  <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                </div>
+                <div class="icon-wrap">
+                  <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                </div>
+                <div class="icon-wrap">
+                  <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                </div>
+                <div class="icon-wrap">
+                  <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-lst">
+            <div class="sng-review">
+              <div class="review-header">
+                <p>Kelvin</p>
+                <div class="rating-wrap">
+                  <div class="rating-icons">
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                  </div>
+                  <p class="sm">Updated 28 minutes ago</p>
+                </div>
+              </div>
+              <p class="sm dsc">Enak Banget Buat Dipake Trading Santai, Cocok Bagi Pemula</p>
+            </div>
+            <div class="sng-review">
+              <div class="review-header">
+                <p>Kelvin</p>
+                <div class="rating-wrap">
+                  <div class="rating-icons">
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                  </div>
+                  <p class="sm">Updated 28 minutes ago</p>
+                </div>
+              </div>
+              <p class="sm dsc">Enak Banget Buat Dipake Trading Santai, Cocok Bagi Pemula</p>
+            </div>
+            <div class="sng-review">
+              <div class="review-header">
+                <p>Kelvin</p>
+                <div class="rating-wrap">
+                  <div class="rating-icons">
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                  </div>
+                  <p class="sm">Updated 28 minutes ago</p>
+                </div>
+              </div>
+              <p class="sm dsc">Enak Banget Buat Dipake Trading Santai, Cocok Bagi Pemula</p>
+            </div>
+            <div class="sng-review">
+              <div class="review-header">
+                <p>Kelvin</p>
+                <div class="rating-wrap">
+                  <div class="rating-icons">
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap active">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                    <div class="icon-wrap">
+                      <amp-img src="./images/ico-star.svg" width="28" height="28" layout="responsive" alt="Star"></amp-img>
+                    </div>
+                  </div>
+                  <p class="sm">Updated 28 minutes ago</p>
+                </div>
+              </div>
+              <p class="sm dsc">Enak Banget Buat Dipake Trading Santai, Cocok Bagi Pemula</p>
+            </div>
+          </div>             
+          <div class="pagination">
+            <ul>
+              <li class="current"><a href="">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">></a></li>
+              <li><a href="">>></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container xl">
+        <div class="main-wrap">
+          <div class="logo-wrap">
+            <a href="#">
+              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+            </a>
+          </div>
+          <div class="txt-wrap">
+            <p>Coinvestasi adalah platform Indonesia terkemuka untuk acara dan informasi terkait mata uang kripto, aset digital, dan teknologi blockchain.</p>
+          </div>
+          <ul class="social-wrap">
+            <li><a href="#"><amp-img src="./images/ico-facebook.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-instagram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-twitter.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-youtube.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+            <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
+          </ul>
+          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+        </div>
+        <div class="menu-wrap">
+          <div class="sng-wrap">
+            <h2>Jelajahi</h2>
+            <ul class="menu">
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+              <li><a href="#">Theme</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Mulai</h2>
+            <ul class="menu">
+              <li><a href="#">Beli Bitcoin</a></li>
+              <li><a href="#">Trading Bitcoin</a></li>
+              <li><a href="#">Bitcoin gratis</a></li>
+              <li><a href="#">Mining bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Berita</h2>
+            <ul class="menu">
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+              <li><a href="#">Tag</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Kosa kata</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Pertanyaan</h2>
+            <ul class="menu">
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Aplikasi</h2>
+            <ul class="menu">
+              <li><a href="#">Exchange Bitcoin</a></li>
+              <li><a href="#">Dompet Bitcoin</a></li>
+              <li><a href="#">Mining Bitcoin</a></li>
+              <li><a href="#">Faucet Bitcoin</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Acara</h2>
+            <ul class="menu">
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+              <li><a href="#">Acara category</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Tentang</h2>
+            <ul class="menu">
+              <li><a href="#">Tentang kami</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Dalam berita</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="sng-wrap">
+            <h2>Advertise</h2>
+            <ul class="menu">
+              <li><a href="#">Our partners</a></li>
+              <li><a href="#">Press Releases</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">How Coinvestasi works</a></li>
+              <li><a href="#">F.A.Q</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <amp-state id="props">
+      <script type="application/json">
+        {
+          "headerStatus": true
+        }
+      </script>
+  </amp-state>
+  </body>
+</html>
