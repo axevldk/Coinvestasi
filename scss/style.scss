@@ -693,15 +693,18 @@ h1 {
 .entry {
   margin: 50px 0 70px;
   p {
+    line-height: 28px;
     text-align: justify;
+    @include respond-to-max(tablet) {
+      text-align: left;
+    }
   }
   h2 {
-    text-align: center;
     margin-bottom: 30px;
     font-weight: 500;
   }
   p:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
   .video-wrap {
     width: 100%;
@@ -735,6 +738,7 @@ h1 {
         @include respond-to-max (tablet) {
           width: 10px;
           left: -20px;
+          top: 11px;
         }
       }
       h3 {
@@ -838,9 +842,8 @@ h1 {
       display: none;
     }
     .sticky-box {
-      padding-top: 30px;
       position: sticky;
-      top: 70px;
+      top: 100px;
       .img-wrap {
         line-height: 0;
         width: 100px;
@@ -850,7 +853,6 @@ h1 {
         box-shadow: 0px 1px 4px rgba(39, 39, 42, 0.12);
       }
       .social-wrap {
-        margin-top: 50px;
         text-align: center;
         li:not(:last-child) {
           margin-bottom: 17px;
@@ -1442,6 +1444,9 @@ h1 {
         }
       }
     }
+    .sng-author:not(:last-child) {
+      border-bottom: 1px solid $col-yellow;
+    }
     .author-box {
       margin: 50px 0;
       amp-img {
@@ -1577,6 +1582,7 @@ h1 {
         display: none;
         @include respond-to-max(tablet) {
           display: flex;
+          margin-left: auto;
         }
         li {
           margin: 0 3px;
@@ -1586,9 +1592,18 @@ h1 {
     .detail-holder {
       width: 110px;
       text-align: right;
+      margin-left: auto;
+      @include respond-to-max(tablet) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
       p {
         margin: 0;
       }
+    }
+    .author-box {
+      margin-top: 24px;
     }
   }
 }
@@ -1711,7 +1726,7 @@ h1 {
     @include respond-to-max(tablet) {
       background: white;
       width: 100%;
-      padding: 10px 0;
+      padding: 0;
       display: block;
     }
     .sng-group {
@@ -1800,6 +1815,9 @@ h1 {
       display: none;
       align-items: center;
       justify-content: center;
+      @include respond-to-max(tablet) {
+        margin-bottom: 10px;
+      }
       .btn {
         border-radius: 8px;
         width: calc(50% - 15px);
@@ -2188,7 +2206,7 @@ h1 {
         }
         &[expanded] {
           background: #FDFDFD;
-          &::after {
+          h3::after {
             transform: rotate(0);
           }
           .faq-answer {
@@ -2403,6 +2421,9 @@ h1 {
       display: flex;
       justify-content: space-between;
       padding: 8px;
+      @include respond-to-max(tablet) {
+        margin-bottom: 25px;
+      }
     }
     .sng-post {
       width: calc(100% / 3 - 10px);
@@ -2531,6 +2552,9 @@ h1 {
         }
         .sng-wrap {
           display: block;
+          @include respond-to-max(tablet) {
+            width: 100%;
+          }
         }
         .sng-post {
           padding: 28px 13px 13px;
@@ -3358,7 +3382,8 @@ h1 {
     }
     @include respond-to-max(tablet) {
       padding: 0;
-      display: block;
+      display: flex;
+      justify-content: space-between;
     }
     input {
       width: calc(100% - 310px);
@@ -3376,9 +3401,8 @@ h1 {
       }
       @include respond-to-max(tablet) {
         height: 53px;
-        width: 370px;
-        margin: 0 auto 10px;
-        max-width: 100%;
+        width: 30%;
+        margin: 0;
         display: block;
       }
     }
@@ -3396,8 +3420,8 @@ h1 {
       @include respond-to-max(tablet) {
         font-size: 18px;
         height: 53px;
-        width: 370px;
-        margin: 0 auto;
+        width: 30%;
+        margin: 0;
         max-width: 100%;
       }
     }

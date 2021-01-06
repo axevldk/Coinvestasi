@@ -14,8 +14,6 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
-    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
   </head>
   <body>
     <header>
@@ -68,10 +66,10 @@
           <div class="ctn-wrap">
             <h3>Kesimpulan panduan</h3>
             <ul>
-              <li>Apa itu DeFi</li>
-              <li>Manfaat DeFi</li>
-              <li>Beda DeFi dan Bank Konvensional</li>
-              <li>Dampak dari DeFi</li>
+              <li><a href="#s-01">Apa itu DeFi</a></li>
+              <li><a href="#s-02">Manfaat DeFi</a></li>
+              <li><a href="#s-03">Beda DeFi dan Bank Konvensional</a></li>
+              <li><a href="#s-04">Dampak dari DeFi</a></li>
             </ul>
           </div>
         </div>
@@ -96,7 +94,7 @@
       <section class="entry">
         <div class="container">
           <div class="entry-wrap">
-            <h2>Apa itu DeFi</h2>
+            <h2 id="s-01">Apa itu DeFi</h2>
             <p>Decentralized Finance atau DeFi merupakan sebuah sistem yang bertujuan untuk menghadirkan layanan keuangan terbuka, tanpa izin, transparan dan tersedia bagi setiap orang tanpa adanya otoritas terpusat.</p>
             <p>Hal ini bisa dilakukan DeFi karena teknologi smart contract yang ada di baliknya, ini dapat memungkinkan developer membangun fungsionalitas yang jauh lebih canggih bukan sekadar mengirim atau menerima mata uang digital saja.</p>
             <p>DeFi dapat menjadi alternatif global untuk setiap layanan keuangan yang digunakan saat ini. Misalnya tabungan, pinjaman, perdagangan, asuransi dan lainnya dapat diakses siapa saja di dunia dengan hanya menggunakan smartphone dan koneksi internet.</p>
@@ -104,7 +102,7 @@
             </div>
             <p>Pengguna juga dapat mengambil pinjaman, menukar aset, membeli aset jangka lama atau pendek hingga menerapkan strategi investasi canggih dan otomatis.</p>
             <p>Meski bisa diakses secara terbuka, namun para pengguna tetap memiliki kendali penuh atas aset-aset mereka dengan menggunakan aplikasi terdesentralisasi atau Dapps. Aplikasi ini memungkinkan pengguna membuat stablecoin, meminjamkan uang dan mendapatkan bunga pada aset crypto yang dimiliki.</p>
-            <h2>Manfaat DeFi</h2>
+            <h2 id="s-02">Manfaat DeFi</h2>
             <amp-img media="(min-width: 391px)" alt="Infographic Coinvestasi Manfaat Utama DeFi" src="./images/image01.png" width="365" height="640"></amp-img>
             <amp-img media="(max-width: 390px)" alt="Infographic Coinvestasi Manfaat Utama DeFi" src="./images/image01.png" layout="responsive" width="365" height="640"></amp-img>
             <ul>
@@ -125,7 +123,7 @@
                 <p>DeFi dapat mengurangi biaya transaksi karena tidak menggunakan perantara, sehingga pengguna tidak perlu membayar biaya tambahan untuk transaksi.</p>
               </li>
             </ul>
-            <h2>Beda DeFi dan Bank Konvensional</h2>
+            <h2 id="s-03">Beda DeFi dan Bank Konvensional</h2>
             <div class="table-container">
               <table>
                 <thead>
@@ -145,7 +143,7 @@
             <p>Kedua adalah transparansi, kode yang ada di teknologi ini bisa dilihat siapa saja. Semua aktivitas transaksi terbuka namun dengan nama samaran. Sehingga meski sifatnya sangat transparan, pengguna tetap memiliki privasi.</p>
             <p>Jika bank konvensional belum bersifat global dan hanya terbatas di satu negara saja, DeFi dari awal sudah dirancang untuk global.  Misalnya satu pengguna ada di Amerika dan satu lagi ada di Indonesia, kedua pengguna itu tetap memiliki akses ke layanan dan jaringan DeFi yang sama.</p>
             <p>Perbedaan keempat dari bank konvensional yang memiliki izin rumit, DeFi justru sebaliknya, siapapun bisa berpatisipasi dan menggunakaannya.</p>
-            <h2>Dampak dari DeFi</h2>
+            <h2 id="s-04">Dampak dari DeFi</h2>
             <amp-img media="(min-width: 391px)" alt="Infographic Coinvestasi Dampak DeFi" src="./images/image02.jpg" width="365" height="640"></amp-img>
             <amp-img media="(max-width: 390px)" alt="Infographic Coinvestasi Dampak DeFi" src="./images/image02.jpg" layout="responsive" width="365" height="640"></amp-img>
             <ul>
@@ -252,211 +250,56 @@
         <div class="container md">
           <h2>Panduan</h2>
           <div class="slider-wrap">
-            <amp-selector 
-              id="panduanSelector" 
-              on="select:panduanCarousel.goToSlide(index=event.targetOption)" 
-              layout="container"> 
-              <div option="0" selected></div>
-              <div option="1"></div>
-              <div option="2"></div>
-              <div option="3"></div>
-            </amp-selector>
-            <amp-carousel type="slides"
-              layout="fill"
-              id="panduanCarousel"
-              on="slideChange:panduanSelector.toggle(index=event.index, value=true)">
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+            <div class="sng-wrap">
+              <div class="sng-post">
+                <div class="img-wrap">
+                  <amp-img src="./images/image03.png"
+                    width="300"
+                    height="169"
+                    layout="responsive"
+                    alt="Post Thumbnail">
+                  </amp-img>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                <div class="info">
+                  <p class="category">Theme</p>
+                  <p class="time">21 minutes ago</p>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
-                </div>
+                <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
               </div>
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+              <div class="sng-post">
+                <div class="img-wrap">
+                  <amp-img src="./images/image03.png"
+                    width="300"
+                    height="169"
+                    layout="responsive"
+                    alt="Post Thumbnail">
+                  </amp-img>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                <div class="info">
+                  <p class="category">Theme</p>
+                  <p class="time">21 minutes ago</p>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
-                </div>
+                <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
               </div>
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+              <div class="sng-post">
+                <div class="img-wrap">
+                  <amp-img src="./images/image03.png"
+                    width="300"
+                    height="169"
+                    layout="responsive"
+                    alt="Post Thumbnail">
+                  </amp-img>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
+                <div class="info">
+                  <p class="category">Theme</p>
+                  <p class="time">21 minutes ago</p>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
-                </div>
+                <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
               </div>
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
-                </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
-                </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/image03.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">Theme</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Apa itu Aave?</h3></a>
-                </div>
-              </div>
-            </amp-carousel>
+            </div>
           </div>
           <div class="btn-wrap">
-            <a href="#" class="load-more-link">Lihat semua panduan DeFi</a>
+            <a href="#" class="btn btn-blue bordered load-more-link">Lihat semua panduan DeFi</a>
           </div>
         </div>
       </section>
@@ -464,211 +307,56 @@
         <div class="container md">
           <h2>Berita</h2>
           <div class="slider-wrap">
-            <amp-selector 
-              id="beritaSelector" 
-              on="select:beritaCarousel.goToSlide(index=event.targetOption)" 
-              layout="container"> 
-              <div option="0" selected></div>
-              <div option="1"></div>
-              <div option="2"></div>
-              <div option="3"></div>
-            </amp-selector>
-            <amp-carousel type="slides"
-              layout="fill"
-              id="beritaCarousel"
-              on="slideChange:beritaSelector.toggle(index=event.index, value=true)">
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
+            <div class="sng-wrap">
+              <div class="sng-post">
+                <div class="img-wrap">
+                  <amp-img src="./images/thumbnail_300x169.png"
+                    width="300"
+                    height="169"
+                    layout="responsive"
+                    alt="Post Thumbnail">
+                  </amp-img>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
+                <div class="info">
+                  <p class="category">News</p>
+                  <p class="time">21 minutes ago</p>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
-                </div>
+                <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
               </div>
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
+              <div class="sng-post">
+                <div class="img-wrap">
+                  <amp-img src="./images/thumbnail_300x169.png"
+                    width="300"
+                    height="169"
+                    layout="responsive"
+                    alt="Post Thumbnail">
+                  </amp-img>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
+                <div class="info">
+                  <p class="category">News</p>
+                  <p class="time">21 minutes ago</p>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
-                </div>
+                <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
               </div>
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
+              <div class="sng-post">
+                <div class="img-wrap">
+                  <amp-img src="./images/thumbnail_300x169.png"
+                    width="300"
+                    height="169"
+                    layout="responsive"
+                    alt="Post Thumbnail">
+                  </amp-img>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
+                <div class="info">
+                  <p class="category">News</p>
+                  <p class="time">21 minutes ago</p>
                 </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
-                </div>
+                <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
               </div>
-              <div class="sng-wrap">
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
-                </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
-                </div>
-                <div class="sng-post">
-                  <div class="img-wrap">
-                    <amp-img src="./images/thumbnail_300x169.png"
-                      width="300"
-                      height="169"
-                      layout="responsive"
-                      alt="Post Thumbnail">
-                    </amp-img>
-                  </div>
-                  <div class="info">
-                    <p class="category">News</p>
-                    <p class="time">21 minutes ago</p>
-                  </div>
-                  <a class="post-title" href="#"><h3>Uniswap Masuk 20 DeFi Teratas</h3></a>
-                </div>
-              </div>
-            </amp-carousel>
+            </div>
           </div>
           <div class="btn-wrap">
-            <a href="#" class="load-more-link">Lihat semua berita terkait</a>
+            <a href="#" class="btn btn-blue bordered load-more-link">Lihat semua berita terkait</a>
           </div>
         </div>
       </section>
@@ -694,7 +382,7 @@
             </a>
           </div>
           <div class="btn-wrap">
-            <a href="#" class="load-more-link">Lihat semua pertanyaan</a>
+            <a href="#" class="btn btn-blue bordered load-more-link">Lihat semua pertanyaan</a>
           </div>
         </div>
       </section>
@@ -704,7 +392,8 @@
         <div class="main-wrap">
           <div class="logo-wrap">
             <a href="#">
-              <amp-img alt="Coinvestasi" src="./images/logo-footer.svg" width="277" height="46"></amp-img>
+              <amp-img alt="Coinvestasi" media="(min-width: 768px)" src="./images/logo-footer.png" width="277" height="46"></amp-img>
+              <amp-img alt="Coinvestasi" media="(max-width: 767px)" src="./images/logo-footer.png" width="200" height="33"></amp-img>
             </a>
           </div>
           <div class="txt-wrap">
@@ -718,11 +407,10 @@
             <li><a href="#"><amp-img src="./images/ico-telegram.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
             <li><a href="#"><amp-img src="./images/ico-linkedin.svg" alt="" width="30" height="30" layout="responsive"></amp-img></a></li>
           </ul>
-          <p class="copyright">© Coinvestasi 2017 - 2021</p>
+          <p class="copyright h-mobile">© Coinvestasi 2017 - 2021</p>
         </div>
         <div class="menu-wrap">
-          <div class="sng-wrap">
-            <h2>Jelajahi</h2>
+          <div class="sng-wrap"><h2>Explore</h2>
             <ul class="menu">
               <li><a href="#">Theme</a></li>
               <li><a href="#">Theme</a></li>
@@ -731,25 +419,24 @@
             </ul>
           </div>
           <div class="sng-wrap">
-            <h2>Mulai</h2>
+            <h2>Panduan</h2>
             <ul class="menu">
-              <li><a href="#">Beli Bitcoin</a></li>
-              <li><a href="#">Trading Bitcoin</a></li>
-              <li><a href="#">Bitcoin gratis</a></li>
-              <li><a href="#">Mining bitcoin</a></li>
+              <li><a href="#">Paragraf regular</a></li>
+              <li><a href="#">Paragraf regular</a></li>
+              <li><a href="#">Paragraf regular</a></li>
             </ul>
           </div>
           <div class="sng-wrap">
             <h2>Berita</h2>
             <ul class="menu">
-              <li><a href="#">Tag</a></li>
-              <li><a href="#">Tag</a></li>
-              <li><a href="#">Tag</a></li>
-              <li><a href="#">Tag</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
             </ul>
           </div>
           <div class="sng-wrap">
-            <h2>Kosa kata</h2>
+            <h2>Kosakata</h2>
             <ul class="menu">
               <li><a href="#">Paragraph regular</a></li>
               <li><a href="#">Paragraph regular</a></li>
@@ -769,16 +456,15 @@
           <div class="sng-wrap">
             <h2>Aplikasi</h2>
             <ul class="menu">
-              <li><a href="#">Exchange Bitcoin</a></li>
-              <li><a href="#">Dompet Bitcoin</a></li>
-              <li><a href="#">Mining Bitcoin</a></li>
-              <li><a href="#">Faucet Bitcoin</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
+              <li><a href="#">Paragraph regular</a></li>
             </ul>
           </div>
           <div class="sng-wrap">
             <h2>Acara</h2>
             <ul class="menu">
-              <li><a href="#">Acara category</a></li>
               <li><a href="#">Acara category</a></li>
               <li><a href="#">Acara category</a></li>
               <li><a href="#">Acara category</a></li>
@@ -790,8 +476,6 @@
               <li><a href="#">Tentang kami</a></li>
               <li><a href="#">Contact</a></li>
               <li><a href="#">Karir</a></li>
-              <li><a href="#">Dalam berita</a></li>
-              <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
           <div class="sng-wrap">
@@ -799,12 +483,11 @@
             <ul class="menu">
               <li><a href="#">Our partners</a></li>
               <li><a href="#">Press Releases</a></li>
-              <li><a href="#">Advertise</a></li>
-              <li><a href="#">How Coinvestasi works</a></li>
               <li><a href="#">F.A.Q</a></li>
             </ul>
           </div>
         </div>
+        <p class="copyright h-desktop">© Coinvestasi 2017 - 2021</p>
       </div>
     </footer>
     <amp-state id="props">

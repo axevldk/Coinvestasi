@@ -69,6 +69,7 @@ h1 {
 }
 h2 {
   font-size: 32px;
+  line-height: 36px;
   @include respond-to-max(tablet) {
     font-size: 18px;
   }
