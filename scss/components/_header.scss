@@ -110,4 +110,10 @@ main {
   @include respond-to-max(tablet) {
     padding-top: 60px;
   }
+  &.has-intro {
+    @include respond-to-max(tablet) {
+      padding-bottom: 30px;
+      margin-bottom: 70px;
+    }
+  }
 }
