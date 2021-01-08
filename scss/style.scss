@@ -464,21 +464,26 @@ h1 {
   .ttl-wrap {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-bottom: 3px;
     border-bottom: 1px solid rgba(30, 56, 107, 0.21);
     margin-bottom: 40px;
     @include respond-to-max(tablet) {
-      display: block;
       padding-bottom: 10px;
       margin-bottom: 14px;
     }
     h2 {
       font-weight: 500;
       margin-right: 10px;
+      line-height: 1.2;
     }
     .btn-wrap {
       display: flex;
       align-items: center;
+      @include respond-to-max(tablet) {
+        display: block;
+        text-align: right;
+      }
       p {
         color: rgba(30, 56, 107, 0.21);
         font-size: 16px;
@@ -492,7 +497,7 @@ h1 {
   .img-wrap {
     line-height: 0;
     @include respond-to-max(tablet) {
-      padding: 20px 25px;
+      padding: 0 0 25px;
       background: $col-light-yellow;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -658,58 +663,32 @@ h1 {
     margin-bottom: 25px;
   }
   .cta-wrap {
-    background: $col-blue;
-    box-shadow: 0px 4px 12px rgba(17, 51, 83, 0.02);
+    background: #FFFFFF;
+    box-shadow: 0px 1.88px 3.75px rgba(0, 0, 0, 0.075);
+    text-align: center;
     border-radius: 8px;
-    padding: 5px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 10px 43px 27px;
+    display: block;
     @include respond-to-max(tablet) {
-      display: block;
-      background: white;
       padding: 6px 6px 12px;
-      text-align: center;
-      box-shadow: 0px 1.88px 3.75px rgba(0, 0, 0, 0.075);
     }
-    .ctn-wrap {
-      display: flex;
-      align-items: center;
-      margin-right: 15px;
-      @include respond-to-max(tablet) {
-        display: block;
-      }
-      .img-wrap {
-        line-height: 0;
-        width: 100px;
-        margin-right: 20px;
+    .txt-wrap {
+      margin-bottom: 4px;
+      p {
+        color: white;
+        color: $col-blue;
+        font-size: 14px;
         @include respond-to-max(tablet) {
           display: none;
-        }
-      }
-      .txt-wrap {
-        p {
-          color: white;
-          font-size: 16px;
-          @include respond-to-max(tablet) {
-            display: none;
-          }
-        }
-        h2 {
-          color: white;
-          font-weight: 400;
-          @include respond-to-max(tablet) {
-            color: $col-blue;
-          }
         }
       }
     }
     .btn-wrap {
       .btn {
-        padding: 18px 45px;
+        padding: 10px 45px;
         @include respond-to-max(tablet) {
           width: 100%;
-          padding: 12px;
+          padding: 10px;
         }
       }
     }
@@ -1409,7 +1388,6 @@ h1 {
     }
     hr {
       border: 1px solid rgba(30, 56, 107, 0.21);
-      margin-top: 40px;
     }
     .guide-wrap {
       margin: 40px 0 60px;
@@ -1477,14 +1455,23 @@ h1 {
         }
       }
     }
-    .sng-author:not(:last-child) {
-      border-bottom: 1px solid $col-yellow;
+    .sng-author {
+      border-bottom: 1px solid transparent;
+      background: #FEF7EA;
+      padding: 0 5px;
     }
     .author-box {
-      margin: 50px 0;
+      margin: 50px 0 20px;
+      .author-wrap {
+        box-shadow: none;
+        border-bottom: 1px solid white;
+      }
       amp-img {
         margin-bottom: 0;
       }
+    }
+    .post-slider {
+      margin: 20px 0;
     }
   }
 }
@@ -2734,6 +2721,70 @@ h1 {
       }
       .btn-wrap {
         margin-top: 0;
+      }
+    }
+  }
+}
+.author-slider {
+  margin: 30px 0 0;
+  .slider-wrap {
+    amp-base-carousel {
+      width: 100%;
+      padding: 0 20px;
+    }
+    .i-amphtml-carousel-arrows {
+    }
+    .i-amphtml-carousel-content {
+      position: relative;
+    }
+    .i-amphtml-layout-size-defined {
+      position: relative;
+    }
+    .carousel-prev,
+    .carousel-next {
+      width: 20px;
+      height: 20px;
+      padding: 10px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    .carousel-prev {
+      background-image: url(../images/arrow.svg);
+      transform: scaleX(-1) translate(100%, -30px);
+      @include respond-to-max(switcher) {
+        transform: scaleX(-1) translate(100%, -27px);
+      }
+    }
+
+    .carousel-next {
+      background-image: url(../images/arrow.svg);
+      transform: translate(100%, -30px);
+      @include respond-to-max(switcher) {
+        transform: translate(100%, -27px);
+      }
+    }
+    .sng-profile {
+      padding: 0 8px;
+      .img-wrap {
+        width: 99px;
+        height: 99px;
+        margin: 0 auto 13px;
+        @include respond-to-max(desktop) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      p.name {
+        font-weight: 600;
+        font-size: 18px;
+        color: $col-blue;
+        text-align: center;
+        margin: 0;
+        @include respond-to-max(desktop) {
+          font-size: 16px;
+        }
       }
     }
   }

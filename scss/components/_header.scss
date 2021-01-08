@@ -57,6 +57,9 @@ header {
             margin-right: 0;
           }
         }
+        a {
+          color: $col-blue;
+        }
         @include respond-to-max(tablet) {
           position: relative;
           padding: 17px 0;
@@ -70,7 +73,6 @@ header {
             line-height: 0;
           }
           a {
-            color: $col-blue;
             font-size: 18px;
             font-weight: 500;
           }
